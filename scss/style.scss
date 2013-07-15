@@ -1,0 +1,247 @@
+
+@import "compass";
+
+@import "zen";
+$zen-column-count: 12;
+$zen-gutter-width:10px; 
+$blue : #ADD8E6;
+$white:#fff;
+@import url(http://fonts.googleapis.com/css?family=Milonga);
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html { 
+	font-size: 62.5%; 
+
+} 
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+}
+h2.title{
+	padding:0 0 1rem;
+	font-family:times, serif;
+	//background-color:#ADD8E6;
+}
+div.headerWrapper.main{
+	min-height:36.5rem;
+	background:#ADD8E6 url(../images/stars-blue.png);
+	header.main{
+		display: block;
+		margin:15% auto 10%;
+
+		text-align: center;
+ 
+		@include zen-grid-container;
+		
+		img{
+			width:50%;
+			max-width:46rem;
+		}
+		h1{
+			font:3.4rem  'Milonga', cursive;
+		}
+		h2{
+		}
+		/*@media all (min-width:70rem){
+			h1{
+				font-size: 5rem;
+			}
+		}*/
+		@media all and (min-width: 930px){
+				margin:13.8rem auto 0;
+				min-height: 60rem;
+		}
+	}
+}
+body{
+	font:1.3rem Helvetica, Arial, sans-serif;
+	*font-size:small; /* hack retained to preserve specificity */
+	color: #444;
+	min-width:320px;
+	margin:0 auto;
+	//@include zen-grid-container; 
+	div{
+		overflow: hidden;
+	}
+}
+
+#skills{
+	min-height:36.5rem;
+	h3{
+
+	}
+	ul > li > div{
+		//width:30%;
+		width:95%;
+		display: block;
+		height:30rem;
+		margin:1.5rem auto;
+		padding:0.3rem;
+		text-align: center;
+		strong{
+			font-size:3rem;
+		}
+		//@include box-shadow(#555 0 0 4px 1px);
+		&#lang{
+			//@include zen-grid-item(3,1);
+		}
+		&#os{
+			//@include zen-grid-item(3,9);
+		}
+		&#db{
+			//@include zen-grid-item(3,5);
+		}
+	}
+}
+
+
+
+#education{
+	min-height:25rem;
+	text-align:center;
+	background:url(../images/paper_texture.png);
+	h2{
+		text-align: left;
+		background-color:transparent;
+	}
+	h3{
+		font-size:2em;
+		margin:2rem 0;
+		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+	}
+}
+
+
+#workExperience{
+background-color:$blue;
+	h3{
+		padding:0.5rem 0;
+	}
+	.job{
+
+		min-height: 30rem;
+		padding:1%;
+		margin:0.75rem auto;
+		overflow:hidden;
+		@include box-shadow(#555 0 0 4px 1px);
+		/*&:nth-of-type(2n){
+			div.main{
+				float:right;
+			}
+		}
+		*/
+		div.headerWrapper{
+				@include zen-grid-item(12,1);
+				@include zen-clear();
+			}
+		header{
+			padding:1rem;
+			.company{
+				text-align: left;
+				text-indent: -999em;
+				margin:1rem 0;
+			}
+			h2,h3,h4{
+			
+			}
+		}
+		div.main{
+			@include zen-grid-item(12,1);
+			@include zen-clear();
+			padding-bottom:2rem;
+			ul{
+				li{
+					margin-bottom:1rem;
+				}
+			}
+		}
+	}
+	#bancvue{
+
+		color:#fdffff;
+		@include background(linear-gradient(top, #2e1054 42%, #11061f 80%));
+
+		header{
+			font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+			.company{
+				@include background(image-url("logo-bancVue.png") no-repeat);
+				background-size:contain;
+				min-height:4rem;
+			}
+		}
+	}
+	#hostgator{
+		min-height: 0;
+		@include background(linear-gradient(top, #49b5e4 1%, #9cc866 100%)); 
+		background-size:contain;
+		/*&:after{
+			content: url(../images/snappy.png);
+			height:80%;
+			right:50%;
+		}
+		*/
+		header{
+			.company{
+				@include background(image-url("logo-hostgator.png") no-repeat);
+				background-size:contain;
+				min-height:2rem;
+				text-align: none;
+
+			}
+			//background:url(../images/snappy.png) no-repeat center left;
+		}
+
+	}
+	#gensuite{
+		//@include background-image(linear-gradient(top,#fff 50%, #00aeef 100%));
+		background:#5dcae7;
+		header{
+			font-family: Arial, Helvetica, sans-serif;
+			.company{
+				@include background(image-url("logo-gensuite.png") no-repeat);
+				background-size:contain;
+				min-height: 4rem;
+			}
+		}
+	}
+	#osu{
+		background:#ff9700;
+		header{
+			.company{
+				@include background(image-url("logo-osu.png") no-repeat);
+				background-size:contain;
+				min-height: 7rem;
+				float:left;
+				margin:1rem;
+			}
+		}
+	}
+	#ocolly{
+		background-color:$white;
+		header{
+			font-family:"Courier New", Courier, monospace;
+			.company{
+				@include background(image-url("logo-ocolly.png") no-repeat);
+				background-size:contain;
+				min-height: 8rem;
+				max-width:45rem;
+				margin:auto;
+			}
+		}
+	}
+	#walmartDev, #walmartNetwork{
+		color:#FFF;
+		background:#0872ba;
+		header{
+			font-family: Myriad, Arial, sans-serif;
+			.company{
+				@include background(image-url("logo-walmart.png") no-repeat);
+				background-size:contain;
+				min-height: 4rem;
+			}
+		}
+	}
+}
+
+
+

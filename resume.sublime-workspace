@@ -1,0 +1,475 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"backg",
+				"background"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"ze",
+				"zen-clear"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"nav",
+				"nav-btn"
+			],
+			[
+				"console",
+				"consoleLog"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"catego",
+				"category_name"
+			],
+			[
+				"light",
+				"lightGreen"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"border",
+				"borderRadius"
+			],
+			[
+				"show",
+				"showcase-nav-right"
+			],
+			[
+				"box",
+				"boxShadow"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"entry",
+				"entry-content"
+			],
+			[
+				"en",
+				"entryContent"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"h2",
+				"h2"
+			],
+			[
+				"inline",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "scss/style.scss",
+			"settings":
+			{
+				"buffer_size": 3999,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resume.html",
+			"settings":
+			{
+				"buffer_size": 6634,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config.rb",
+			"settings":
+			{
+				"buffer_size": 862,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Compass/Compass.sublime-build",
+	"command_palette":
+	{
+		"height": 285.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: lis",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/preston/Desktop/resume/resume/flexslider.css",
+		"/home/preston/Desktop/resume/resume/scss/print.scss",
+		"/home/preston/.config/sublime-text-2/Packages/SublimeOnSaveBuild/SublimeOnSaveBuild.sublime-settings",
+		"/home/preston/Desktop/resume/resume/resume.sublime-project",
+		"/home/preston/.config/sublime-text-2/Packages/Compass/Compass.sublime-build",
+		"/home/preston/Desktop/resume/resume/config.rb",
+		"/home/preston/.config/sublime-text-2/Packages/Compass/compasswatch.bat",
+		"/home/preston/.config/sublime-text-2/Packages/Compass/README.markdown",
+		"/home/preston/Desktop/resume/resume/scss/resume.sublime-workspace",
+		"/home/preston/Desktop/resume/resume/resume.html",
+		"/home/preston/Desktop/resume/resume/scss/resume.sublime-project",
+		"/home/preston/Desktop/resume/resume/resume.sublime-workspace",
+		"/home/preston/workspace/wordpress/wp-content/themes/osu-sailing/footer.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/osu-sailing/content-home.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/osu-sailing/content.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/osu-sailing/osu-sailing.sublime-workspace",
+		"/home/preston/workspace/wordpress/wp-content/themes/osu-sailing/.gitignore",
+		"/home/preston/workspace/wordpress/wp-content/themes/_s/.gitignore",
+		"/home/preston/workspace/wordpress/wp-content/themes/_s/_s.sublime-project",
+		"/home/preston/work/custom/r-branch/scss/_global.scss",
+		"/home/preston/.config/sublime-text-2/Packages/SASS Build/SASS.sublime-build",
+		"/home/preston/.config/sublime-text-2/Packages/Sass/Completions/Sass - Properties.sublime-completions",
+		"/home/preston/.config/sublime-text-2/Packages/Sass/package-metadata.json",
+		"/home/preston/work/custom/r-branch/font/stylesheet.css",
+		"/home/preston/work/svn-cms.bancvue.com/production/firstbase/custom/bankofidaho3/open",
+		"/home/preston/workspace/wordpress/wp-content/plugins/len-slider/css/defaultskin.css",
+		"/home/preston/workspace/wordpress/wp-content/themes/circa/style.css",
+		"/home/preston/workspace/wordpress/wp-content/themes/circa/header-home.php",
+		"/home/preston/Desktop/skrollr-master/index.html",
+		"/home/preston/workspace/wordpress/wp-content/themes/circa/footer.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/_s/style.css",
+		"/home/preston/workspace/wordpress/wp-content/themes/_s/content.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/_s/functions.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/_s/inc/template-tags.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/_s/scss/style.scss",
+		"/home/preston/workspace/wordpress/wp-content/themes/_s/scss/reset.scss",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/parts/shared/html-header.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/css/responsive.css",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/css/style.css",
+		"/home/preston/.config/sublime-text-2/Packages/SASS Build/SASS - Compressed.sublime-build",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/style.css",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/single.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/sidebar.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/functions.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/parts/shared/footer.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/parts/shared/header.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/scss/style.css",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/parts/shared/html-footer.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/single-gallery.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/images/watercolor-paper-texture.jpg",
+		"/opt/lampp/phpmyadmin/config.inc.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/css/orig-style-preston-1.css",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/js/sidebar.js",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/css/style-preston.css",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/css/orig-style-preston.css",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/gallery.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/starkers/home.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/viewportindustries-starkers-2903f3b/parts/shared/html-footer.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/viewportindustries-starkers-2903f3b/js/sidebar.js",
+		"/home/preston/workspace/wordpress/wp-content/themes/viewportindustries-starkers-2903f3b/parts/shared/header.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/viewportindustries-starkers-2903f3b/functions.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/slydur/page.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/slydur/css/style.css",
+		"/home/preston/workspace/wordpress/wp-content/themes/prestonbezant/index.html",
+		"/home/preston/workspace/wordpress/wp-content/themes/viewportindustries-starkers-2903f3b/parts/shared/html-header.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/viewportindustries-starkers-2903f3b/parts/shared/footer.php",
+		"/home/preston/Desktop/Jessica Hische.html",
+		"/home/preston/workspace/wordpress/wp-content/themes/viewportindustries-starkers-2903f3b/js/site.js",
+		"/home/preston/workspace/prestonbezant2.0/index.html",
+		"/home/preston/workspace/wordpress/wp-content/themes/Automattic-_s/header.php",
+		"/home/preston/workspace/wordpress/wp-content/themes/Automattic-_s/functions.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/home/preston/workspace/wordpress/wp-content/themes/starkers/"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"</body>",
+			"<body>",
+			"</p>",
+			"<p>",
+			"</p>",
+			"<p>",
+			"h2",
+			"primaryNav",
+			"#nav",
+			".entry-content",
+			"entry-content",
+			".show",
+			".showcase",
+			".main-navigation"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"</div>",
+			"<div class=\"main\">",
+			"</li>",
+			"<li>",
+			"<p>",
+			"hostgator",
+			"</li>",
+			"<li>",
+			"h3",
+			"#primaryNav",
+			"#entry-content",
+			".menu-nav-container"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "scss/style.scss",
+					"settings":
+					{
+						"buffer_size": 3999,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1672,
+								1672
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1140.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "resume.html",
+					"settings":
+					{
+						"buffer_size": 6634,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1273,
+								1273
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 351.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "config.rb",
+					"settings":
+					{
+						"buffer_size": 862,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								454,
+								454
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 95.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 154.0,
+	"status_bar_visible": true
+}
