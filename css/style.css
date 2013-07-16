@@ -29,22 +29,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 41, ../scss/style.scss */
 h2.title {
-  padding: 0 0 1rem;
-  font-family: times, serif;
-}
-@media (min-width: 30em) {
-  /* line 41, ../scss/style.scss */
-  h2.title {
-    text-align: center;
-  }
+  max-width: 96rem;
+  padding: 0.5rem 0 0 2rem;
+  font-family: 'Milonga', cursive;
 }
 
-/* line 49, ../scss/style.scss */
+/* line 50, ../scss/style.scss */
 div.headerWrapper.main {
   min-height: 36.5rem;
   background: lightblue url(../images/stars-blue.png);
 }
-/* line 52, ../scss/style.scss */
+/* line 53, ../scss/style.scss */
 div.headerWrapper.main header.main {
   display: block;
   margin: 15% auto 10%;
@@ -55,24 +50,25 @@ div.headerWrapper.main header.main {
   	}
   }*/
 }
-/* line 60, ../scss/style.scss */
+/* line 61, ../scss/style.scss */
 div.headerWrapper.main header.main img {
   width: 50%;
   max-width: 46rem;
 }
-/* line 64, ../scss/style.scss */
+/* line 65, ../scss/style.scss */
 div.headerWrapper.main header.main h1 {
-  font: 3.4rem  'Milonga', cursive;
+  font-size: 3.4rem;
+  font-family: 'Milonga', cursive;
 }
 @media (min-width: 930px) {
-  /* line 52, ../scss/style.scss */
+  /* line 53, ../scss/style.scss */
   div.headerWrapper.main header.main {
     margin: 13.8rem auto 0;
     min-height: 60rem;
   }
 }
 
-/* line 80, ../scss/style.scss */
+/* line 82, ../scss/style.scss */
 body {
   font: 1.3rem Helvetica, Arial, sans-serif;
   *font-size: small;
@@ -80,17 +76,18 @@ body {
   color: #444;
   min-width: 320px;
   margin: 0 auto;
+  background-color: lightblue;
 }
-/* line 87, ../scss/style.scss */
+/* line 90, ../scss/style.scss */
 body div {
   overflow: hidden;
 }
 
-/* line 92, ../scss/style.scss */
+/* line 95, ../scss/style.scss */
 #skills {
   min-height: 36.5rem;
 }
-/* line 97, ../scss/style.scss */
+/* line 100, ../scss/style.scss */
 #skills ul > li > div {
   width: 95%;
   display: block;
@@ -99,38 +96,37 @@ body div {
   padding: 0.3rem;
   text-align: center;
 }
-/* line 105, ../scss/style.scss */
+/* line 108, ../scss/style.scss */
 #skills ul > li > div strong {
   font-size: 3rem;
 }
 
-/* line 123, ../scss/style.scss */
+/* line 126, ../scss/style.scss */
 #education {
   min-height: 36.5rem;
-  text-align: center;
   background: url(../images/paper_texture.png);
 }
-/* line 127, ../scss/style.scss */
+/* line 129, ../scss/style.scss */
 #education h2 {
-  text-align: left;
   background-color: transparent;
 }
-/* line 131, ../scss/style.scss */
+/* line 133, ../scss/style.scss */
 #education h3 {
+  text-align: center;
   font-size: 2em;
-  margin: 2rem 0;
+  margin: 4rem 0;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
-
-/* line 139, ../scss/style.scss */
-#workExperience {
-  background-color: lightblue;
+/* line 138, ../scss/style.scss */
+#education h3:first-of-type {
+  margin-top: 8rem;
 }
-/* line 141, ../scss/style.scss */
+
+/* line 147, ../scss/style.scss */
 #workExperience h3 {
   padding: 0.5rem 0;
 }
-/* line 144, ../scss/style.scss */
+/* line 150, ../scss/style.scss */
 #workExperience .job {
   min-height: 36.5rem;
   padding: 4.2rem;
@@ -140,42 +136,42 @@ body div {
   -moz-box-shadow: #555555 0 0 4px 1px;
   box-shadow: #555555 0 0 4px 1px;
 }
-/* line 152, ../scss/style.scss */
+/* line 158, ../scss/style.scss */
 #workExperience .job div.headerWrapper, #workExperience .job div.main {
   max-width: 960px;
   margin: 0 auto;
 }
-/* line 156, ../scss/style.scss */
+/* line 162, ../scss/style.scss */
 #workExperience .job header {
   padding: 1rem;
 }
-/* line 158, ../scss/style.scss */
+/* line 164, ../scss/style.scss */
 #workExperience .job header .company {
   text-align: left;
   text-indent: -999em;
   margin: 1rem 0;
 }
-/* line 167, ../scss/style.scss */
+/* line 173, ../scss/style.scss */
 #workExperience .job div.main {
   padding-bottom: 2rem;
 }
-/* line 171, ../scss/style.scss */
+/* line 177, ../scss/style.scss */
 #workExperience .job div.main ul li {
   margin-bottom: 1rem;
   margin-left: -3rem;
   list-style-type: none;
 }
 @media (min-width: 30em) {
-  /* line 182, ../scss/style.scss */
+  /* line 188, ../scss/style.scss */
   #workExperience .job:nth-of-type(2n) div.main, #workExperience .job:nth-of-type(2n) header {
     text-align: right;
   }
-  /* line 187, ../scss/style.scss */
+  /* line 193, ../scss/style.scss */
   #workExperience .job:nth-of-type(2n) header .company {
     background-position: 100% 0 !important;
   }
 }
-/* line 197, ../scss/style.scss */
+/* line 203, ../scss/style.scss */
 #workExperience #bancvue {
   color: #fdffff;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(42%, #2e1054), color-stop(80%, #11061f));
@@ -184,17 +180,17 @@ body div {
   background: -o-linear-gradient(top, #2e1054 42%, #11061f 80%);
   background: linear-gradient(top, #2e1054 42%, #11061f 80%);
 }
-/* line 202, ../scss/style.scss */
-#workExperience #bancvue header {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-}
-/* line 204, ../scss/style.scss */
+/* line 210, ../scss/style.scss */
 #workExperience #bancvue header .company {
   background: url('../images/logo-bancVue.png?1373984228') no-repeat;
   background-size: contain;
   min-height: 4rem;
 }
-/* line 211, ../scss/style.scss */
+/* line 217, ../scss/style.scss */
+#workExperience #bancvue .main a, #workExperience #bancvue .main a:visited {
+  color: #fff;
+}
+/* line 222, ../scss/style.scss */
 #workExperience #hostgator {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #49b5e4), color-stop(100%, #9cc866));
   background: -webkit-linear-gradient(top, #49b5e4 1%, #9cc866 100%);
@@ -209,7 +205,7 @@ body div {
   }
   */
 }
-/* line 221, ../scss/style.scss */
+/* line 232, ../scss/style.scss */
 #workExperience #hostgator header .company {
   background: url('../images/logo-hostgator.png?1373984228') no-repeat;
   background-size: contain;
@@ -217,57 +213,52 @@ body div {
   min-width: 25rem;
   text-align: none;
 }
-/* line 234, ../scss/style.scss */
+/* line 245, ../scss/style.scss */
 #workExperience #gensuite {
   background: #5dcae7;
 }
-/* line 237, ../scss/style.scss */
+/* line 248, ../scss/style.scss */
 #workExperience #gensuite header {
   font-family: Arial, Helvetica, sans-serif;
 }
-/* line 239, ../scss/style.scss */
+/* line 250, ../scss/style.scss */
 #workExperience #gensuite header .company {
   background: url('../images/logo-gensuite.png?1373984228') no-repeat;
   background-size: contain;
   min-height: 4rem;
 }
-/* line 246, ../scss/style.scss */
+/* line 257, ../scss/style.scss */
 #workExperience #osu {
   background: #ff9700;
 }
-/* line 249, ../scss/style.scss */
+/* line 260, ../scss/style.scss */
 #workExperience #osu header .company {
   background: url('../images/logo-osu.png?1373984228') no-repeat;
   background-size: contain;
   min-height: 7rem;
   margin: 1rem;
 }
-/* line 257, ../scss/style.scss */
+/* line 268, ../scss/style.scss */
 #workExperience #ocolly {
   background-color: white;
-}
-/* line 259, ../scss/style.scss */
-#workExperience #ocolly header {
   font-family: "Courier New", Courier, monospace;
 }
-/* line 262, ../scss/style.scss */
+/* line 272, ../scss/style.scss */
 #workExperience #ocolly header .company {
   background: url('../images/logo-ocolly.png?1373984228') no-repeat;
   background-size: contain;
-  min-height: 8rem;
-  max-width: 45rem;
-  margin: auto;
+  min-height: 6rem;
 }
-/* line 272, ../scss/style.scss */
+/* line 279, ../scss/style.scss */
 #workExperience #walmartDev, #workExperience #walmartNetwork {
   color: #FFF;
   background: #0872ba;
 }
-/* line 275, ../scss/style.scss */
+/* line 282, ../scss/style.scss */
 #workExperience #walmartDev header, #workExperience #walmartNetwork header {
   font-family: Myriad, Arial, sans-serif;
 }
-/* line 277, ../scss/style.scss */
+/* line 284, ../scss/style.scss */
 #workExperience #walmartDev header .company, #workExperience #walmartNetwork header .company {
   background: url('../images/logo-walmart.png?1373984228') no-repeat;
   background-size: contain;

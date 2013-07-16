@@ -7,12 +7,14 @@
 	<link href="css/print.css" media="print all" rel="stylesheet" type="text/css">
 	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
 	<!-- Flexslider -->
-	<link rel="stylesheet" href="flexslider.css" type="text/css">
+	<link rel="stylesheet" media="screen" href="flexslider.css" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script src="js/jquery.flexslider.js"></script>
 	<script type="text/javascript" charset="utf-8">
 	  $(window).load(function() {
-	    $('.flexslider').flexslider();
+	  	if (window.matchMedia("screen").matches) {
+		    $('.flexslider').flexslider();
+		}
 	  });
 	</script>
 	<!-- /Flexslider -->
@@ -73,7 +75,7 @@
 		</div>
 		<div class="main">
 			<ul>
-				<li> Created responsive landing pages. (ex. http://www.gncu.org/WeRock ) http://www.gncu.org/WeAspire http://www.gncu.org/AutoLoans</li>
+				<li> Created responsive landing pages. (ex. <a href="http://www.gncu.org/WeRock" target="_blank">WeRock</a>, <a href="http://www.gncu.org/WeAspire" target="_blank">WeAspire</a>, <a href="http://www.gncu.org/AutoLoans" target="_blank">AutoLoans</a>)</li>
 				<li>Utilized Sass framework to manage and style websites for community financial institutions.</li>
 				<li>In charge of producing and managing 200 microsites.</li>
 				<li>Lead developer for compliance changes on over 120 microsites.</li>
