@@ -39,10 +39,11 @@ h1,h2,h3,h4,h5,h6{
 	margin:0;
 }
 h2.title{
-	max-width:96rem;
-	padding: 0.5rem 0 0 2rem;
-	font-family:'Milonga', cursive;
-	//background-color:#ADD8E6;
+	//max-width: 100rem;
+	padding: 0.5rem 0 0 1.5rem;
+	font-family: 'Milonga', cursive;
+	display: block;
+	margin: 0 auto;
 	@include breakpoint(medium){
 		//text-align:center;
 	}
@@ -93,12 +94,12 @@ body{
 }
 
 #skills{
+	display:none;
 	min-height:$section-height;
 	h3{
 
 	}
 	ul > li > div{
-		//width:30%;
 		width:95%;
 		display: block;
 		height:30rem;
@@ -128,7 +129,7 @@ body{
 	background:url(../images/paper_texture.png);
 	h2{
 		//text-align: left;
-		background-color:transparent;
+		background-color:$blue;
 	}
 	h3{
 		text-align: center;
@@ -288,6 +289,10 @@ body{
 			}
 		}
 	}
+}
+#volunteer{
+	max-width:960px;
+	margin:0 auto;
 }
 
 
