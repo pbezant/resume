@@ -1,11 +1,25 @@
 
 @import "compass";
-
 @import "zen";
+
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: 930px) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width:30em) { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: 650px)  { @content; }
+  }
+}
+
 $zen-column-count: 12;
 $zen-gutter-width:10px; 
+$section-height:36.5rem;
 $blue : #ADD8E6;
-$white:#fff;
+$white: #fff;
+
 @import url(http://fonts.googleapis.com/css?family=Milonga);
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -21,9 +35,12 @@ h2.title{
 	padding:0 0 1rem;
 	font-family:times, serif;
 	//background-color:#ADD8E6;
+	@include breakpoint(medium){
+		text-align:center;
+	}
 }
 div.headerWrapper.main{
-	min-height:36.5rem;
+	min-height:$section-height;
 	background:#ADD8E6 url(../images/stars-blue.png);
 	header.main{
 		display: block;
@@ -47,7 +64,7 @@ div.headerWrapper.main{
 				font-size: 5rem;
 			}
 		}*/
-		@media all and (min-width: 930px){
+		@include breakpoint(large){
 				margin:13.8rem auto 0;
 				min-height: 60rem;
 		}
@@ -66,7 +83,7 @@ body{
 }
 
 #skills{
-	min-height:36.5rem;
+	min-height:$section-height;
 	h3{
 
 	}
@@ -97,7 +114,7 @@ body{
 
 
 #education{
-	min-height:25rem;
+	min-height:$section-height;
 	text-align:center;
 	background:url(../images/paper_texture.png);
 	h2{
@@ -119,21 +136,16 @@ background-color:$blue;
 	}
 	.job{
 
-		min-height: 30rem;
-		padding:1%;
+		min-height: $section-height;
+		padding:4.2rem;
 		margin:0.75rem auto;
 		overflow:hidden;
 		@include box-shadow(#555 0 0 4px 1px);
-		/*&:nth-of-type(2n){
-			div.main{
-				float:right;
-			}
+		
+		div.headerWrapper, div.main{
+			max-width:960px;
+			margin:0 auto;
 		}
-		*/
-		div.headerWrapper{
-				@include zen-grid-item(12,1);
-				@include zen-clear();
-			}
 		header{
 			padding:1rem;
 			.company{
@@ -146,15 +158,34 @@ background-color:$blue;
 			}
 		}
 		div.main{
-			@include zen-grid-item(12,1);
-			@include zen-clear();
+
 			padding-bottom:2rem;
 			ul{
 				li{
 					margin-bottom:1rem;
+					margin-left:-3rem;
+					list-style-type: none;
 				}
 			}
 		}
+		@include breakpoint(medium){
+			div.main{
+			}  
+			&:nth-of-type(2n){
+				div.main, header{
+					text-align: right;
+				}
+				header{
+
+					.company{
+						background-position: 100% 0 !important;
+					}
+				} 
+
+			}
+		}
+
+		
 	}
 	#bancvue{
 
@@ -171,7 +202,6 @@ background-color:$blue;
 		}
 	}
 	#hostgator{
-		min-height: 0;
 		@include background(linear-gradient(top, #49b5e4 1%, #9cc866 100%)); 
 		background-size:contain;
 		/*&:after{
@@ -185,7 +215,9 @@ background-color:$blue;
 				@include background(image-url("logo-hostgator.png") no-repeat);
 				background-size:contain;
 				min-height:2rem;
+				min-width: 25rem;
 				text-align: none;
+
 
 			}
 			//background:url(../images/snappy.png) no-repeat center left;
@@ -211,7 +243,6 @@ background-color:$blue;
 				@include background(image-url("logo-osu.png") no-repeat);
 				background-size:contain;
 				min-height: 7rem;
-				float:left;
 				margin:1rem;
 			}
 		}
@@ -220,12 +251,14 @@ background-color:$blue;
 		background-color:$white;
 		header{
 			font-family:"Courier New", Courier, monospace;
+			width: 100%;
 			.company{
 				@include background(image-url("logo-ocolly.png") no-repeat);
 				background-size:contain;
 				min-height: 8rem;
 				max-width:45rem;
 				margin:auto;
+				float: none;
 			}
 		}
 	}

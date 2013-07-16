@@ -1,33 +1,39 @@
 @import url(http://fonts.googleapis.com/css?family=Milonga);
-/* line 11, ../scss/style.scss */
+/* line 25, ../scss/style.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 13, ../scss/style.scss */
+/* line 27, ../scss/style.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 17, ../scss/style.scss */
+/* line 31, ../scss/style.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-/* line 20, ../scss/style.scss */
+/* line 34, ../scss/style.scss */
 h2.title {
   padding: 0 0 1rem;
   font-family: times, serif;
 }
+@media (min-width: 30em) {
+  /* line 34, ../scss/style.scss */
+  h2.title {
+    text-align: center;
+  }
+}
 
-/* line 25, ../scss/style.scss */
+/* line 42, ../scss/style.scss */
 div.headerWrapper.main {
   min-height: 36.5rem;
   background: lightblue url(../images/stars-blue.png);
 }
-/* line 28, ../scss/style.scss */
+/* line 45, ../scss/style.scss */
 div.headerWrapper.main header.main {
   display: block;
   margin: 15% auto 10%;
@@ -49,24 +55,24 @@ div.headerWrapper.main header.main:before, div.headerWrapper.main header.main:af
 div.headerWrapper.main header.main:after {
   clear: both;
 }
-/* line 36, ../scss/style.scss */
+/* line 53, ../scss/style.scss */
 div.headerWrapper.main header.main img {
   width: 50%;
   max-width: 46rem;
 }
-/* line 40, ../scss/style.scss */
+/* line 57, ../scss/style.scss */
 div.headerWrapper.main header.main h1 {
   font: 3.4rem "Milonga", cursive;
 }
-@media all and (min-width: 930px) {
-  /* line 28, ../scss/style.scss */
+@media (min-width: 930px) {
+  /* line 45, ../scss/style.scss */
   div.headerWrapper.main header.main {
     margin: 13.8rem auto 0;
     min-height: 60rem;
   }
 }
 
-/* line 56, ../scss/style.scss */
+/* line 73, ../scss/style.scss */
 body {
   font: 1.3rem Helvetica, Arial, sans-serif;
   *font-size: small;
@@ -75,16 +81,16 @@ body {
   min-width: 320px;
   margin: 0 auto;
 }
-/* line 63, ../scss/style.scss */
+/* line 80, ../scss/style.scss */
 body div {
   overflow: hidden;
 }
 
-/* line 68, ../scss/style.scss */
+/* line 85, ../scss/style.scss */
 #skills {
   min-height: 36.5rem;
 }
-/* line 73, ../scss/style.scss */
+/* line 90, ../scss/style.scss */
 #skills ul > li > div {
   width: 95%;
   display: block;
@@ -93,105 +99,83 @@ body div {
   padding: 0.3rem;
   text-align: center;
 }
-/* line 81, ../scss/style.scss */
+/* line 98, ../scss/style.scss */
 #skills ul > li > div strong {
   font-size: 3rem;
 }
 
-/* line 99, ../scss/style.scss */
+/* line 116, ../scss/style.scss */
 #education {
-  min-height: 25rem;
+  min-height: 36.5rem;
   text-align: center;
   background: url(../images/paper_texture.png);
 }
-/* line 103, ../scss/style.scss */
+/* line 120, ../scss/style.scss */
 #education h2 {
   text-align: left;
   background-color: transparent;
 }
-/* line 107, ../scss/style.scss */
+/* line 124, ../scss/style.scss */
 #education h3 {
   font-size: 2em;
   margin: 2rem 0;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-/* line 115, ../scss/style.scss */
+/* line 132, ../scss/style.scss */
 #workExperience {
   background-color: lightblue;
 }
-/* line 117, ../scss/style.scss */
+/* line 134, ../scss/style.scss */
 #workExperience h3 {
   padding: 0.5rem 0;
 }
-/* line 120, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 #workExperience .job {
-  min-height: 30rem;
-  padding: 1%;
+  min-height: 36.5rem;
+  padding: 4.2rem;
   margin: 0.75rem auto;
   overflow: hidden;
   -webkit-box-shadow: #555555 0 0 4px 1px;
   -moz-box-shadow: #555555 0 0 4px 1px;
   box-shadow: #555555 0 0 4px 1px;
-  /*&:nth-of-type(2n){
-  	div.main{
-  		float:right;
-  	}
-  }
-  */
 }
-/* line 133, ../scss/style.scss */
-#workExperience .job div.headerWrapper {
-  float: left;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: -100%;
-  padding-left: 5px;
-  padding-right: 5px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-  clear: left;
+/* line 145, ../scss/style.scss */
+#workExperience .job div.headerWrapper, #workExperience .job div.main {
+  max-width: 960px;
+  margin: 0 auto;
 }
-/* line 137, ../scss/style.scss */
+/* line 149, ../scss/style.scss */
 #workExperience .job header {
   padding: 1rem;
 }
-/* line 139, ../scss/style.scss */
+/* line 151, ../scss/style.scss */
 #workExperience .job header .company {
   text-align: left;
   text-indent: -999em;
   margin: 1rem 0;
 }
-/* line 148, ../scss/style.scss */
+/* line 160, ../scss/style.scss */
 #workExperience .job div.main {
-  float: left;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: -100%;
-  padding-left: 5px;
-  padding-right: 5px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-  clear: left;
   padding-bottom: 2rem;
 }
-/* line 153, ../scss/style.scss */
+/* line 164, ../scss/style.scss */
 #workExperience .job div.main ul li {
   margin-bottom: 1rem;
+  margin-left: -3rem;
+  list-style-type: none;
 }
-/* line 159, ../scss/style.scss */
+@media (min-width: 30em) {
+  /* line 175, ../scss/style.scss */
+  #workExperience .job:nth-of-type(2n) div.main, #workExperience .job:nth-of-type(2n) header {
+    text-align: right;
+  }
+  /* line 180, ../scss/style.scss */
+  #workExperience .job:nth-of-type(2n) header .company {
+    background-position: 100% 0 !important;
+  }
+}
+/* line 190, ../scss/style.scss */
 #workExperience #bancvue {
   color: #fdffff;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(42%, #2e1054), color-stop(80%, #11061f));
@@ -200,19 +184,18 @@ body div {
   background: -o-linear-gradient(top, #2e1054 42%, #11061f 80%);
   background: linear-gradient(top, #2e1054 42%, #11061f 80%);
 }
-/* line 164, ../scss/style.scss */
+/* line 195, ../scss/style.scss */
 #workExperience #bancvue header {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
-/* line 166, ../scss/style.scss */
+/* line 197, ../scss/style.scss */
 #workExperience #bancvue header .company {
   background: url('../images/logo-bancVue.png?1368393302') no-repeat;
   background-size: contain;
   min-height: 4rem;
 }
-/* line 173, ../scss/style.scss */
+/* line 204, ../scss/style.scss */
 #workExperience #hostgator {
-  min-height: 0;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #49b5e4), color-stop(100%, #9cc866));
   background: -webkit-linear-gradient(top, #49b5e4 1%, #9cc866 100%);
   background: -moz-linear-gradient(top, #49b5e4 1%, #9cc866 100%);
@@ -226,65 +209,67 @@ body div {
   }
   */
 }
-/* line 184, ../scss/style.scss */
+/* line 214, ../scss/style.scss */
 #workExperience #hostgator header .company {
   background: url('../images/logo-hostgator.png?1368391757') no-repeat;
   background-size: contain;
   min-height: 2rem;
+  min-width: 25rem;
   text-align: none;
 }
-/* line 195, ../scss/style.scss */
+/* line 227, ../scss/style.scss */
 #workExperience #gensuite {
   background: #5dcae7;
 }
-/* line 198, ../scss/style.scss */
+/* line 230, ../scss/style.scss */
 #workExperience #gensuite header {
   font-family: Arial, Helvetica, sans-serif;
 }
-/* line 200, ../scss/style.scss */
+/* line 232, ../scss/style.scss */
 #workExperience #gensuite header .company {
   background: url('../images/logo-gensuite.png?1368384856') no-repeat;
   background-size: contain;
   min-height: 4rem;
 }
-/* line 207, ../scss/style.scss */
+/* line 239, ../scss/style.scss */
 #workExperience #osu {
   background: #ff9700;
 }
-/* line 210, ../scss/style.scss */
+/* line 242, ../scss/style.scss */
 #workExperience #osu header .company {
   background: url('../images/logo-osu.png?1368398205') no-repeat;
   background-size: contain;
   min-height: 7rem;
-  float: left;
   margin: 1rem;
 }
-/* line 219, ../scss/style.scss */
+/* line 250, ../scss/style.scss */
 #workExperience #ocolly {
   background-color: white;
 }
-/* line 221, ../scss/style.scss */
+/* line 252, ../scss/style.scss */
 #workExperience #ocolly header {
   font-family: "Courier New", Courier, monospace;
+  width: 100%;
 }
-/* line 223, ../scss/style.scss */
+/* line 255, ../scss/style.scss */
 #workExperience #ocolly header .company {
   background: url('../images/logo-ocolly.png?1368415663') no-repeat;
   background-size: contain;
   min-height: 8rem;
   max-width: 45rem;
   margin: auto;
+  float: none;
 }
-/* line 232, ../scss/style.scss */
+/* line 265, ../scss/style.scss */
 #workExperience #walmartDev, #workExperience #walmartNetwork {
   color: #FFF;
   background: #0872ba;
 }
-/* line 235, ../scss/style.scss */
+/* line 268, ../scss/style.scss */
 #workExperience #walmartDev header, #workExperience #walmartNetwork header {
   font-family: Myriad, Arial, sans-serif;
 }
-/* line 237, ../scss/style.scss */
+/* line 270, ../scss/style.scss */
 #workExperience #walmartDev header .company, #workExperience #walmartNetwork header .company {
   background: url('../images/logo-walmart.png?1368398583') no-repeat;
   background-size: contain;
