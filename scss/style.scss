@@ -1,3 +1,10 @@
+
+/*
+TODO:
+Match title fonts
+jobs header and body should have same font
+Add images then parralax
+*/ 
 @mixin breakpoint($point) {
   @if $point == large {
     @media (min-width: 930px) { @content; }
