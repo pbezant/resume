@@ -4,7 +4,9 @@
 @import url(http://fonts.googleapis.com/css?family=Milonga);
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
+img{
+	display:none;
+}
 html { 
 	font-size: 62.5%; 
 
@@ -54,6 +56,7 @@ body {
 }
 
 #skills{
+	display: none;
 	h3{
 
 	}

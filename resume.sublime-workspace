@@ -4,146 +4,370 @@
 		"selected_items":
 		[
 			[
-				"backg",
-				"background"
-			],
-			[
-				"ba",
-				"background-image"
-			],
-			[
 				"back",
-				"background"
-			],
-			[
-				"ze",
-				"zen-clear"
-			],
-			[
-				"padd",
-				"padding"
-			],
-			[
-				"padding",
-				"padding-left"
-			],
-			[
-				"nav",
-				"nav-btn"
-			],
-			[
-				"console",
-				"consoleLog"
-			],
-			[
-				"margi",
-				"margin-top"
-			],
-			[
-				"trans",
-				"transparent"
-			],
-			[
-				"catego",
-				"category_name"
-			],
-			[
-				"light",
-				"lightGreen"
-			],
-			[
-				"text",
-				"text-decoration"
-			],
-			[
-				"end",
-				"endif"
+				"background-position"
 			],
 			[
 				"margin",
-				"margin-bottom"
-			],
-			[
-				"backgroun",
-				"background-color"
-			],
-			[
-				"border",
-				"borderRadius"
-			],
-			[
-				"show",
-				"showcase-nav-right"
-			],
-			[
-				"box",
-				"boxShadow"
-			],
-			[
-				"con",
-				"container"
-			],
-			[
-				"co",
-				"color"
-			],
-			[
-				"max",
-				"max-width"
-			],
-			[
-				"entry",
-				"entry-content"
-			],
-			[
-				"en",
-				"entryContent"
+				"margin-top"
 			],
 			[
 				"font",
 				"font-size"
 			],
 			[
-				"h2",
-				"h2"
+				"feat",
+				"featuredSummary"
 			],
 			[
-				"inline",
-				"inline-block"
+				"background",
+				"background-size"
+			],
+			[
+				"learn",
+				"learnMoreBanner"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"banner",
+				"bannerSlides"
+			],
+			[
+				"nth",
+				"nthChild-0"
+			],
+			[
+				"mc",
+				"mc-debitCard"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"androi",
+				"android2"
+			],
+			[
+				"tabs",
+				"tabsLeft"
+			],
+			[
+				"Import",
+				"important"
+			],
+			[
+				"overLabe",
+				"overLabelWrapper"
+			],
+			[
+				"prod",
+				"productPage"
+			],
+			[
+				"slide",
+				"slideContent"
+			],
+			[
+				"rep",
+				"repeat-x"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"loc",
+				"locList"
+			],
+			[
+				"repeat",
+				"repeat-x"
+			],
+			[
+				"left",
+				"leftColumn"
+			],
+			[
+				"border",
+				"borderRadius"
+			],
+			[
+				"eh",
+				"eh-lg"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"zen",
+				"zen-grid-container"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"list-",
+				"list-style-type"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"consol",
+				"consoleLog"
+			],
+			[
+				"confirm",
+				"confirmAlert2"
+			],
+			[
+				"repe",
+				"repeat-x"
+			],
+			[
+				"console",
+				"consoleLog"
+			],
+			[
+				"bak",
+				"background-position"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"share",
+				"shareButton"
+			],
+			[
+				"text-",
+				"text-indent"
+			],
+			[
+				"froi",
+				"froisearch"
+			],
+			[
+				"import",
+				"important"
+			],
+			[
+				"backgrou",
+				"background-position"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"box-orient",
+				"moz-box-orient"
+			],
+			[
+				"lef",
+				"leftNav"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"tet",
+				"text-decoration"
+			],
+			[
+				"elem",
+				"elemOffset"
+			],
+			[
+				"stickem",
+				"stickemResize"
+			],
+			[
+				"get_templ",
+				"get_template_part"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"padding-",
+				"padding-bottom"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"con",
+				"content-main"
+			],
+			[
+				"mouseen",
+				"mouseenter"
+			],
+			[
+				"mouse",
+				"mouseenter"
+			],
+			[
+				"mou",
+				"mouseleave"
+			],
+			[
+				"g",
+				"globalAlpha"
+			],
+			[
+				"imge",
+				"imageObj"
+			],
+			[
+				"img",
+				"imageObj"
+			],
+			[
+				"mous",
+				"mouseenter"
+			],
+			[
+				"power",
+				"powered_by_img"
+			],
+			[
+				"lo",
+				"logo1"
+			],
+			[
+				"logo2",
+				"logo2_OriginalWidth"
+			],
+			[
+				"draw",
+				"drawImage"
+			],
+			[
+				"alpha",
+				"alphaInterval"
+			],
+			[
+				"clear",
+				"clearInterval"
+			],
+			[
+				"reques",
+				"requestAnimFrame"
+			],
+			[
+				"al",
+				"alphaInterval"
+			],
+			[
+				"logo",
+				"logo2_OriginalWidth"
+			],
+			[
+				"image",
+				"imageObj"
+			],
+			[
+				"b",
+				"bvi_logo"
+			],
+			[
+				"banc",
+				"bancVue"
+			],
+			[
+				"canvas",
+				"canvasElement"
+			],
+			[
+				"ban",
+				"bancvue"
+			],
+			[
+				"canv",
+				"canvas_width"
+			],
+			[
+				"canva",
+				"canvas_width"
+			],
+			[
+				"direction",
+				"direction_y"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"canvase",
+				"canvas_height"
+			],
+			[
+				"can",
+				"canvas_height"
+			],
+			[
+				"ca",
+				"canvas_height"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "scss/style.scss",
+			"file": "scss/print.scss",
 			"settings":
 			{
-				"buffer_size": 3999,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resume.html",
-			"settings":
-			{
-				"buffer_size": 6634,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config.rb",
-			"settings":
-			{
-				"buffer_size": 862,
+				"buffer_size": 1020,
 				"line_ending": "Unix"
 			}
 		}
 	],
-	"build_system": "Packages/Compass/Compass.sublime-build",
+	"build_system": "",
 	"command_palette":
 	{
-		"height": 285.0,
+		"height": 291.0,
 		"selected_items":
 		[
 			[
@@ -151,35 +375,27 @@
 				"Package Control: Upgrade Package"
 			],
 			[
-				"Package Control: list",
-				"Package Control: List Packages"
-			],
-			[
-				"Package Control: lis",
-				"Package Control: List Packages"
-			],
-			[
-				"Package Control: up",
-				"Package Control: Upgrade Package"
-			],
-			[
-				"pa",
-				"Package Control: Install Package"
-			],
-			[
-				"pac",
+				"Package Control: in",
 				"Package Control: Install Package"
 			],
 			[
 				"pack",
 				"Package Control: Install Package"
+			],
+			[
+				"git: pull",
+				"Git: Pull"
+			],
+			[
+				"svn",
+				"SVN: Update"
 			]
 		],
-		"width": 449.0
+		"width": 516.0
 	},
 	"console":
 	{
-		"height": 139.0
+		"height": 125.0
 	},
 	"distraction_free":
 	{
@@ -192,88 +408,148 @@
 	},
 	"file_history":
 	[
-		"/home/preston/Desktop/resume/resume/flexslider.css",
-		"/home/preston/Desktop/resume/resume/scss/print.scss",
-		"/home/preston/.config/sublime-text-2/Packages/SublimeOnSaveBuild/SublimeOnSaveBuild.sublime-settings",
-		"/home/preston/Desktop/resume/resume/resume.sublime-project",
-		"/home/preston/.config/sublime-text-2/Packages/Compass/Compass.sublime-build",
-		"/home/preston/Desktop/resume/resume/config.rb",
-		"/home/preston/.config/sublime-text-2/Packages/Compass/compasswatch.bat",
-		"/home/preston/.config/sublime-text-2/Packages/Compass/README.markdown",
-		"/home/preston/Desktop/resume/resume/scss/resume.sublime-workspace",
-		"/home/preston/Desktop/resume/resume/resume.html",
-		"/home/preston/Desktop/resume/resume/scss/resume.sublime-project",
-		"/home/preston/Desktop/resume/resume/resume.sublime-workspace",
-		"/home/preston/workspace/wordpress/wp-content/themes/osu-sailing/footer.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/osu-sailing/content-home.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/osu-sailing/content.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/osu-sailing/osu-sailing.sublime-workspace",
-		"/home/preston/workspace/wordpress/wp-content/themes/osu-sailing/.gitignore",
-		"/home/preston/workspace/wordpress/wp-content/themes/_s/.gitignore",
-		"/home/preston/workspace/wordpress/wp-content/themes/_s/_s.sublime-project",
-		"/home/preston/work/custom/r-branch/scss/_global.scss",
-		"/home/preston/.config/sublime-text-2/Packages/SASS Build/SASS.sublime-build",
-		"/home/preston/.config/sublime-text-2/Packages/Sass/Completions/Sass - Properties.sublime-completions",
-		"/home/preston/.config/sublime-text-2/Packages/Sass/package-metadata.json",
-		"/home/preston/work/custom/r-branch/font/stylesheet.css",
-		"/home/preston/work/svn-cms.bancvue.com/production/firstbase/custom/bankofidaho3/open",
-		"/home/preston/workspace/wordpress/wp-content/plugins/len-slider/css/defaultskin.css",
-		"/home/preston/workspace/wordpress/wp-content/themes/circa/style.css",
-		"/home/preston/workspace/wordpress/wp-content/themes/circa/header-home.php",
-		"/home/preston/Desktop/skrollr-master/index.html",
-		"/home/preston/workspace/wordpress/wp-content/themes/circa/footer.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/_s/style.css",
-		"/home/preston/workspace/wordpress/wp-content/themes/_s/content.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/_s/functions.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/_s/inc/template-tags.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/_s/scss/style.scss",
-		"/home/preston/workspace/wordpress/wp-content/themes/_s/scss/reset.scss",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/parts/shared/html-header.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/css/responsive.css",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/css/style.css",
-		"/home/preston/.config/sublime-text-2/Packages/SASS Build/SASS - Compressed.sublime-build",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/style.css",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/single.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/sidebar.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/functions.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/parts/shared/footer.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/parts/shared/header.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/scss/style.css",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/parts/shared/html-footer.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/single-gallery.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/images/watercolor-paper-texture.jpg",
-		"/opt/lampp/phpmyadmin/config.inc.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/css/orig-style-preston-1.css",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/js/sidebar.js",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/css/style-preston.css",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/css/orig-style-preston.css",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/gallery.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/starkers/home.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/viewportindustries-starkers-2903f3b/parts/shared/html-footer.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/viewportindustries-starkers-2903f3b/js/sidebar.js",
-		"/home/preston/workspace/wordpress/wp-content/themes/viewportindustries-starkers-2903f3b/parts/shared/header.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/viewportindustries-starkers-2903f3b/functions.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/slydur/page.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/slydur/css/style.css",
-		"/home/preston/workspace/wordpress/wp-content/themes/prestonbezant/index.html",
-		"/home/preston/workspace/wordpress/wp-content/themes/viewportindustries-starkers-2903f3b/parts/shared/html-header.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/viewportindustries-starkers-2903f3b/parts/shared/footer.php",
-		"/home/preston/Desktop/Jessica Hische.html",
-		"/home/preston/workspace/wordpress/wp-content/themes/viewportindustries-starkers-2903f3b/js/site.js",
-		"/home/preston/workspace/prestonbezant2.0/index.html",
-		"/home/preston/workspace/wordpress/wp-content/themes/Automattic-_s/header.php",
-		"/home/preston/workspace/wordpress/wp-content/themes/Automattic-_s/functions.php"
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/millingtonsbonline/javascript/banner.js",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/pelicanstatecu/javascript/banner.js",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/coastlinefcu/javascript/global.js",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/worthingtonfederalbank/css/banner.css",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/powercu/javascript/global.js",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/powercu/scss/layout.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/cfsbky/javascript/banner.js",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/iberiabank/tal/banner.html",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/morton2/javascript/global.js",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/moneyonefcu/scss/_global.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/washingtonsavings2/scss/landingpage.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/washingtonsavings2/scss/layout.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/gncu/css/layout.css",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/self-help/scss/layout.scss",
+		"/Users/preston.bezant/Desktop/snippets.txt",
+		"/Users/preston.bezant/Library/Application Support/Sublime Text 2/Packages/SublimeOnSaveBuild/SublimeOnSaveBuild.sublime-settings",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/iberiabank/scss/layout.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/noblebank/javascript/global.js",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/florencesb/css/downstream.css",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/alivecu/css/layout.css",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/iberiabank/tal/ajax-feeds.html",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/firstcommunity/javascript/global.js",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/seattlebank/css/banner-refresh.css",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/seattlebank/tal/banner-refresh.html",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/oldwestfcu/javascript/global.js",
+		"/Users/preston.bezant/Library/Application Support/Sublime Text 2/Packages/SASS Build/SASS.sublime-build",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/gfafcurewards2/css/applications.css",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/pebrealtunes2/scss/_global.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/pebrealtunes2/scss/layout.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/pebrealtunes2/scss/applications.scss",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/osu-sailing/style.css",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/_s/sass/style.scss",
+		"/Users/preston.bezant/Library/Application Support/Sublime Text 2/Packages/Compass/Compass.sublime-build",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/_s/scss/style.scss",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/_s/header.php",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/_s/config.rb",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/_s/style.css",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/firstcommunity/scss/_global.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/ccatcurealsavers2/form/Submit-Button.html",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/firstcommunity/scss/search.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/seattlebank/css/products.css",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/seattlebank/css/layout.css",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/seattlebank/css/downstream.css",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/legencebank2/javascript/jsbanner.js",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/ecountybank1/scss/rates.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/ecountybank1/config/firstroi_calculators.xml",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/ecountybank1/javascript/ie6warn/warning.js",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/secuwa/config/firstroi_calculators.xml",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/r-branch/scss/all-styles.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/r-branch/scss/layout.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/r-branch/scss/mobileNav.scss",
+		"/Users/preston.bezant/Desktop/[1] Treasure Island_files/step1.css",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/ecountybank1/scss/category.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/veritycu/tal/location.html",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/veritycu/scss/search.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/veritycu/scss/header.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/veritycu/scss/product.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/bankofidaho3/scss/downstream.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/bankofidaho3/javascript/global.js",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/bankofidaho3/scss/product.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/bankofidaho3/scss/popup.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/bankofidaho3/scss/applications.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/bankofidaho3/scss/online-banking.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/bankofidaho3/scss/locations.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/bankofidaho3/scss/home.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/fmbankusa/javascript/global.js",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/fmbankusa/css/landingpage.css",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/silvergate/scss/_global.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/silvergate/scss/locations.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/silvergate/tal/online-banking-login.html",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/salalcu2/scss/product.scss",
+		"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/salalcu2/scss/layout.scss",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/silvergate/scss/layout.scss",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/silvergate/scss/banner.scss",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/silvergate/scss/locations.scss",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/silvergate/scss/location-tables.scss",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/silvergate/tal/location.html",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/_templateSECONDBranch/tal/location.html",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/_sandbox-rcbrs-v1/css/layout.css",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/_sandbox-rg-v1/javascript/jsbanner.js",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/_sandbox-rg-v1/javascript/bannerSlides.js",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/morton2/scss/layout.scss",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/morton2/scss/popup.scss",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/morton2/scss/print.scss",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/morton2/scss/product.scss",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/morton2/scss/applications.scss",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/morton2/scss/downstream.scss",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/_sandbox-rcb-landing-v1/javascript/jquery.js",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/_sandbox-rcb-landing-v1/javascript/global-test.js",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/fncbrewards3/form/Submit.html",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/fncbrewards3/javascript/global.js",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/fncbrewards2/javascript/global.js",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/atlanticregional/javascript/global.js",
+		"/Users/preston.bezant/Library/Application Support/Sublime Text 2/Packages/SASS/sasswatch.bat",
+		"/Users/preston.bezant/Library/Application Support/Sublime Text 2/Packages/SASS/SASS (OSX).sublime-build",
+		"/Applications/Microsoft Office 2011/Office/MicrosoftOleo.framework/Versions/14/Resources/OleoResources/x-none/AliasTags",
+		"/Users/preston.bezant/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/_sandbox-rcb-landing-v1/scss/popup.scss",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/_templateSECONDBranch/javascript/global.js",
+		"/Users/preston.bezant/Library/Application Support/Sublime Text 2/Packages/SVN/SVN.sublime-settings",
+		"/var/folders/54/p6df7th53tjd25t5g8qzkqn0mkrsnr/T/sublime-svn-1350334615/SVN",
+		"/var/folders/54/p6df7th53tjd25t5g8qzkqn0mkrsnr/T/sublime-svn-1350332625/SVN",
+		"/var/folders/54/p6df7th53tjd25t5g8qzkqn0mkrsnr/T/sublime-svn-1350332550/SVN",
+		"/var/folders/54/p6df7th53tjd25t5g8qzkqn0mkrsnr/T/sublime-svn-1350332507/SVN",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/morton2/scss/_global.scss",
+		"/var/folders/54/p6df7th53tjd25t5g8qzkqn0mkrsnr/T/sublime-svn-1350316251/SVN",
+		"/var/folders/54/p6df7th53tjd25t5g8qzkqn0mkrsnr/T/sublime-svn-1350078534/SVN",
+		"/var/folders/54/p6df7th53tjd25t5g8qzkqn0mkrsnr/T/sublime-svn-1350072357/SVN",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/starkers/screenshot.png",
+		"/Users/preston.bezant/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/pioneerwvfcu/javascript/global.js",
+		"/Users/preston.bezant/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/README.md",
+		"/Users/preston.bezant/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/pioneerwvfcu/scss/home.scss",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/pioneerwvfcu/scss/product.scss",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/pioneerwvfcu/scss/layout.scss",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/pioneerwvfcu/scss/jquery.fancybox-1.3.4.scss",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/banktexas/javascript/global.js",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/salalcu2/scss/downstream.scss",
+		"/Users/preston.bezant/Desktop/Tip_1.jpg",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/mims-pioneerwvfcu/scss/layout.scss",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/_template-mims-kasasa/scss/layout.scss",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/starkers/css/style1.css",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/coastlinefcu/scss/_global.scss",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/starkers/page.php",
+		"/Users/preston.bezant/svn.1stroi.com/production/firstbase/custom/wyhysmarttunes/javascript/global.js",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/starkers/functions.php",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/viewportindustries-starkers-2903f3b/js/sidebar.js"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
 		"height": 0.0,
 		"where_history":
 		[
-			"/home/preston/workspace/wordpress/wp-content/themes/starkers/"
+			"",
+			"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/belgradestatebank",
+			"/Users/preston.bezant/svn-cms.bvops.net/production/firstbase/custom/belgradestatebank/scss",
+			"<open folders>"
 		]
 	},
 	"find_state":
@@ -281,20 +557,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"</body>",
-			"<body>",
-			"</p>",
-			"<p>",
-			"</p>",
-			"<p>",
-			"h2",
-			"primaryNav",
-			"#nav",
-			".entry-content",
-			"entry-content",
-			".show",
-			".showcase",
-			".main-navigation"
+			"hulaCity-title",
+			"#bannerSlides .slide.firstChild p.disclaimer",
+			"nthChild-3",
+			"firstChild",
+			"nthChild-2",
+			"li#rateSlider",
+			"rateslider",
+			"visa-award-points",
+			"popupSmall",
+			"usedAutos",
+			"clickableContainer",
+			"nthChild-2",
+			".logo",
+			"featuredWrapper",
+			"#obLogin",
+			"98024",
+			"98014",
+			"98015",
+			"98009",
+			"&:after",
+			"footer",
+			"header",
+			"#wat",
+			"#appl",
+			"toplink",
+			"footer",
+			"#froisearch-results",
+			"#froisearch",
+			"#productBu",
+			"propert",
+			"nthChild-1",
+			"tabsLeft",
+			"#valley",
+			".noflash",
+			"#prim",
+			"#balloon",
+			".noflash",
+			"primary",
+			"sup",
+			".noflash",
+			"nthChild-4",
+			"fbContactUs",
+			"loclist",
+			".individualPage",
+			"formCenter",
+			".test",
+			"mobileMoney",
+			".noFlash",
+			"#primary",
+			".noFlash",
+			"#prim",
+			"popup",
+			".individualPage",
+			"visa",
+			"#savings-sleuth-title",
+			"productPhoto",
+			"setupLocationsPage",
+			"share",
+			"backgroundDebtConsolidation",
+			"productPage",
+			"sysdiff",
+			"krates",
+			".questions",
+			".applyNow",
+			".questions",
+			".applyNow",
+			"#applyNow",
+			"anniversary",
+			"individualPage",
+			"import",
+			".kasa",
+			"earningsEstimates",
+			"individualPage",
+			"textarea",
+			".submit",
+			"li.submit",
+			".inmo-application",
+			".bgStretch",
+			".header",
+			"personalCheckingComparison",
+			"banner",
+			"applicationSteps",
+			"inmo",
+			"ultraTopNav",
+			"#maincontent",
+			"google_conversion",
+			".individualPage",
+			"#applyNow a",
+			"accordion",
+			"accordian",
+			"button",
+			"#header-photo",
+			"#questions",
+			"rateslider",
+			"@",
+			"more",
+			"clickableContainer",
+			"confirmAlert",
+			"confirmAlert2",
+			"learnMore",
+			"header",
+			".blurb",
+			"#oblSubmit",
+			"#dna",
+			"Fallback Container",
+			"overlayColorVar",
+			"email",
+			"#applyNow",
+			";\n",
+			"&:after",
+			"productTabs",
+			"insideHeader",
+			"#insideHeader",
+			"264",
+			".tabInvestment",
+			"rates",
+			"rat",
+			"rates",
+			".noflash",
+			"button",
+			".clear",
+			"setupSearchPage",
+			"#eagle",
+			"#eagles",
+			"fancybox-content",
+			"fancybox-frame",
+			".floatLeft",
+			"#balloon"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -302,18 +692,14 @@
 		"regex": false,
 		"replace_history":
 		[
-			"</div>",
-			"<div class=\"main\">",
-			"</li>",
-			"<li>",
-			"<p>",
-			"hostgator",
-			"</li>",
-			"<li>",
-			"h3",
-			"#primaryNav",
-			"#entry-content",
-			".menu-nav-container"
+			"&:before",
+			"	&:after{\n			content:\"\";\n			display: block;\n			float:right;\n			background:url(\"../image/goLegence-icons.png\") top left no-repeat; \n		}\n		&.online{\n			&:after{\n				width:83px; height:88px;\n				background-position:-72px -192px;\n			}\n			\n		}\n		&.app{\n			&:after{\n				width:83px; height:88px;\n				background-position:-10px -192px;\n			}\n			\n		}\n		&.text{\n			&:after{\n				width:79px; height:74px;\n				background-position:-10px -396px;\n			}\n			\n			\n		}\n		&.billPay{\n			&:after{\n				width:89px; height:82px;\n				background-position:-10px -304px;\n			}\n			\n		}\n		&.call{\n			&:after{\n				width:83px; height:70px;\n				background-position:-10px -561px;\n			}\n			\n		}\n		&.estatements{\n			&:after{\n				width:84px; height:71px;\n				background-position:-10px -480px;\n			}\n			\n		}\n	}",
+			"togglers",
+			"#clouds",
+			"nav",
+			"header",
+			" ",
+			"logo"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -324,82 +710,28 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "scss/style.scss",
+					"file": "scss/print.scss",
 					"settings":
 					{
-						"buffer_size": 3999,
+						"buffer_size": 1020,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1672,
-								1672
+								259,
+								259
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"syntax": "Packages/SASS/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1140.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "resume.html",
-					"settings":
-					{
-						"buffer_size": 6634,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1273,
-								1273
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 351.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "config.rb",
-					"settings":
-					{
-						"buffer_size": 862,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								454,
-								454
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -416,7 +748,7 @@
 	},
 	"input":
 	{
-		"height": 33.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -443,13 +775,13 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 95.0
+		"height": 133.0
 	},
 	"replace":
 	{
 		"height": 64.0
 	},
-	"save_all_on_build": true,
+	"save_all_on_build": false,
 	"select_file":
 	{
 		"height": 0.0,
@@ -466,10 +798,10 @@
 		],
 		"width": 0.0
 	},
-	"show_minimap": false,
+	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 154.0,
+	"side_bar_width": 279.0,
 	"status_bar_visible": true
 }

@@ -1,7 +1,10 @@
 
-@import "compass";
-@import "zen";
-
+/*
+TODO:
+Match title fonts
+jobs header and body should have same font
+Add images then parralax
+*/ 
 @mixin breakpoint($point) {
   @if $point == large {
     @media (min-width: 930px) { @content; }
@@ -14,8 +17,12 @@
   }
 }
 
+@import "compass";
+/*
+@import "zen";
 $zen-column-count: 12;
 $zen-gutter-width:10px; 
+*/
 $section-height:36.5rem;
 $blue : #ADD8E6;
 $white: #fff;
@@ -32,11 +39,13 @@ h1,h2,h3,h4,h5,h6{
 	margin:0;
 }
 h2.title{
-	padding:0 0 1rem;
-	font-family:times, serif;
-	//background-color:#ADD8E6;
+	//max-width: 100rem;
+	padding: 0.5rem 0 0 1.5rem;
+	font-family: 'Milonga', cursive;
+	display: block;
+	margin: 0 auto;
 	@include breakpoint(medium){
-		text-align:center;
+		//text-align:center;
 	}
 }
 div.headerWrapper.main{
@@ -48,14 +57,15 @@ div.headerWrapper.main{
 
 		text-align: center;
  
-		@include zen-grid-container;
+		//@include zen-grid-container;
 		
 		img{
 			width:50%;
 			max-width:46rem;
 		}
 		h1{
-			font:3.4rem  'Milonga', cursive;
+			font-size:3.4rem;
+			font-family:'Milonga', cursive;
 		}
 		h2{
 		}
@@ -76,6 +86,7 @@ body{
 	color: #444;
 	min-width:320px;
 	margin:0 auto;
+	background-color:$blue;
 	//@include zen-grid-container; 
 	div{
 		overflow: hidden;
@@ -83,12 +94,12 @@ body{
 }
 
 #skills{
+	display:none;
 	min-height:$section-height;
 	h3{
 
 	}
 	ul > li > div{
-		//width:30%;
 		width:95%;
 		display: block;
 		height:30rem;
@@ -115,22 +126,25 @@ body{
 
 #education{
 	min-height:$section-height;
-	text-align:center;
 	background:url(../images/paper_texture.png);
 	h2{
-		text-align: left;
-		background-color:transparent;
+		//text-align: left;
+		background-color:$blue;
 	}
 	h3{
+		text-align: center;
 		font-size:2em;
-		margin:2rem 0;
-		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+		margin:4rem 0;
+		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+		&:first-of-type{
+			margin-top:8rem;
+		}
 	}
 }
 
 
 #workExperience{
-background-color:$blue;
+
 	h3{
 		padding:0.5rem 0;
 	}
@@ -193,11 +207,16 @@ background-color:$blue;
 		@include background(linear-gradient(top, #2e1054 42%, #11061f 80%));
 
 		header{
-			font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+			//font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 			.company{
 				@include background(image-url("logo-bancVue.png") no-repeat);
 				background-size:contain;
 				min-height:4rem;
+			}
+		}
+		.main{
+			a, a:visited{
+				color:#fff;
 			}
 		}
 	}
@@ -249,16 +268,12 @@ background-color:$blue;
 	}
 	#ocolly{
 		background-color:$white;
+		font-family:"Courier New", Courier, monospace;
 		header{
-			font-family:"Courier New", Courier, monospace;
-			width: 100%;
 			.company{
 				@include background(image-url("logo-ocolly.png") no-repeat);
 				background-size:contain;
-				min-height: 8rem;
-				max-width:45rem;
-				margin:auto;
-				float: none;
+				min-height: 6rem;
 			}
 		}
 	}
@@ -274,6 +289,10 @@ background-color:$blue;
 			}
 		}
 	}
+}
+#volunteer{
+	max-width:960px;
+	margin:0 auto;
 }
 
 
