@@ -182,10 +182,13 @@ body{
 		}
 		@include breakpoint(medium){
 			div.main{
+
 			}  
 			&:nth-of-type(2n){
 				div.main, header{
 					text-align: right;
+					float:right:
+					clear: both;
 				}
 				header{
 
