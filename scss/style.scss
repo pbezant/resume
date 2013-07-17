@@ -1,8 +1,6 @@
 
 /*
 TODO:
-Match title fonts
-jobs header and body should have same font
 Add images then parralax
 */ 
 @mixin breakpoint($point) {
@@ -50,7 +48,7 @@ h2.title{
 }
 div.headerWrapper.main{
 	min-height:$section-height;
-	background:#ADD8E6 url(../images/stars-blue.png);
+	
 	header.main{
 		display: block;
 		margin:15% auto 10%;
@@ -86,7 +84,7 @@ body{
 	color: #444;
 	min-width:320px;
 	margin:0 auto;
-	background-color:$blue;
+	background:#ADD8E6 url(../images/stars-blue.png) 50% 0 repeat fixed;
 	//@include zen-grid-container; 
 	div{
 		overflow: hidden;
@@ -126,10 +124,10 @@ body{
 
 #education{
 	min-height:$section-height;
-	background:url(../images/paper_texture.png);
+	background:url(../images/paper_texture.png) 50% 0 repeat fixed;
 	h2{
 		//text-align: left;
-		background-color:$blue;
+		//background-color:$blue;
 	}
 	h3{
 		text-align: center;
@@ -291,8 +289,11 @@ body{
 	}
 }
 #volunteer{
-	max-width:960px;
-	margin:0 auto;
+	ul{
+		max-width: 89rem;
+		margin:1.5rem auto;
+	}
+	
 }
 
 
