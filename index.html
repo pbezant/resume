@@ -22,8 +22,8 @@
 		        var $bgobj = $(this); // assigning the object
 		     
 		        $(window).scroll(function() {
-		           // var yPos = -($(window).scrollTop() / $bgobj.data('speed')); 
-		             var yPos = -($(window).scrollTop() * $bgobj.data('speed'))/2; 
+		           var yPos = -($(window).scrollTop() / $bgobj.data('speed')); 
+		            // var yPos = -($(window).scrollTop() * $bgobj.data('speed'))/2; 
 		            // Put together our final background position
 		            var coords = '0 '+ yPos + 'px';
 		 
@@ -33,11 +33,13 @@
 		    });    
 	  }
 	</script>
-	<!-- /Flexslider -->
+	<!-- /Flexslider --> 
 	
 </head>
-<body data-type="background" data-speed="0.5">
-<div id="main-bg" >
+<body>
+<div id="main-bg" data-type="background" data-speed="5" >
+
+<a href="javascript:window.print()"><img src="images/printer.svg" alt="print this page" id="print-button" /></a>
 <div class="headerWrapper main" >
 	<header class="main">
 		<img src="images/sail.svg"/>
@@ -84,6 +86,7 @@
 <div id="workExperience">
 	<h2 class="title">WORK EXPERIENCE</h2>
 	<div id="bancvue" class="job">
+		<div class="main">
 		<div class="headerWrapper">
 			<header>
 				<h2 class="company">Bancvue ltd.</h2>
@@ -92,7 +95,7 @@
 				<h4>June 2012 to Present</h4>
 			</header>
 		</div>
-		<div class="main">
+		
 			<ul>
 				<li> Created responsive landing pages. (ex. <a href="http://www.gncu.org/WeRock" target="_blank">WeRock</a>, <a href="http://www.gncu.org/WeAspire" target="_blank">WeAspire</a>, <a href="http://www.gncu.org/AutoLoans" target="_blank">AutoLoans</a>)</li>
 				<li>Utilized Sass framework to manage and style websites for community financial institutions.</li>
@@ -103,32 +106,34 @@
 		</div>
 	</div>
 	<div id="hostgator" class="job">
-		<div class="headerWrapper">
-			<header>
-				<h2 class="company">Hostgator</h2>
-				<h3>Linux Jr. Admin</h3>
-				<h4>Austin, TX</h4>
-				<h4>Febuary 2012 - May 2012</h4>
-			</header>
-		</div>
 		<div class="main">
-			<ul>
-				<li>Assisted 40 customers or more per day by chat and phone with issues of their web hosting.</li>
-				<li>Utilized CPanel in troubleshooting issues and instructing customers how to use the application</li>
-				<li></li>
-			</ul>
+			<div class="headerWrapper">
+				<header>
+					<h2 class="company">Hostgator</h2>
+					<h3>Linux Jr. Admin</h3>
+					<h4>Austin, TX</h4>
+					<h4>Febuary 2012 - May 2012</h4>
+				</header>
+			</div>
+			
+				<ul>
+					<li>Assisted 40 customers or more per day by chat and phone with issues of their web hosting.</li>
+					<li>Utilized CPanel in troubleshooting issues and instructing customers how to use the application</li>
+					<li></li>
+				</ul>
 		</div>
 	</div>
 	<div id="gensuite" class="job">
-		<div class="headerWrapper">
-			<header>
-				<h2 class="company">Gensuite LLC </h2>
-				<h3>Web Applications Developer</h3>
-				<h4>Austin, TX </h4>
-				<h4>August 2011 to February 2012 </h4>
-			</header>
-		</div>
 		<div class="main">
+			<div class="headerWrapper">
+				<header>
+					<h2 class="company">Gensuite LLC </h2>
+					<h3>Web Applications Developer</h3>
+					<h4>Austin, TX </h4>
+					<h4>August 2011 to February 2012 </h4>
+				</header>
+			</div>
+			
 			<ul>
 				<li>Hand-Coded Cross-Browser compatible Environmental Health and Safety web applications using ExtJS, ColdFusion, and SQL.</li>
 				<li>Integrated existing systems to be iPhone compliant using ColdFusion, CSS and HTML.</li>
@@ -138,15 +143,17 @@
 		</div>
 	</div>
 	<div id="osu" class="job">
-		<div class="headerWrapper">
-			<header>
-				<h2 class="company">Oklahoma State University</h2>
-				<h3>Backend Web Application Developer</h3>
-				<h4>Stillwater, OK<h4> 
-				<h4>May 2011 to August 2011</h4>
-			</header>
-		</div>
 		<div class="main">
+			<div class="headerWrapper">
+
+				<header>
+					<h2 class="company">Oklahoma State University</h2>
+					<h3>Backend Web Application Developer</h3>
+					<h4>Stillwater, OK<h4> 
+					<h4>May 2011 to August 2011</h4>
+				</header>
+			</div>
+		
 			<ul>
 				<li>Hand-coded the backend of an online learning application using Object-Oriented PHP and MySQL.</li> 
 				<li>Collaborated with other developers to design and create the web application.</li> 
@@ -155,15 +162,16 @@
 		</div>
 	</div>
 	<div id="walmartDev" class="job">
-		<div class="headerWrapper">
-			<header>
-				<h2 class="company">Wal-Mart</h2>
-				<h3>Web Application Developer - Intern</h3>
-				<h4>Bentonville, AR</h4>
-				<h4>May 2010 to August 2010 </h4>
-			</header>
-		</div>
 		<div class="main">
+			<div class="headerWrapper">
+				<header>
+					<h2 class="company">Wal-Mart</h2>
+					<h3>Web Application Developer - Intern</h3>
+					<h4>Bentonville, AR</h4>
+					<h4>May 2010 to August 2010 </h4>
+				</header>
+			</div>
+		
 			<ul>
 				<li>Developed cross-browser internal web applications for the human resource department through the use of JavaScript, Jquery, AJAX and HTML.</li> 
 				<li>Hand coded plugins, using unobtrusive javaScript and CSS to be used in future applications.</li> 
@@ -173,15 +181,15 @@
 		</div>
 	</div>
 	<div id="ocolly" class="job">
-		<div class="headerWrapper">
-			<header>
-				<h2 class="company">Daily O' Collegian</h2>
-				<h3>Photo Editor</h3>
-				<h4>Stillwater, OK<h4>
-				<h4>August 2006 to December 2009</h4>
-			</header>
-		</div>
 		<div class="main">
+			<div class="headerWrapper">
+				<header>
+					<h2 class="company">Daily O' Collegian</h2>
+					<h3>Photo Editor</h3>
+					<h4>Stillwater, OK<h4>
+					<h4>August 2006 to December 2009</h4>
+				</header>
+			</div>
 			<ul>
 				<li>Managed photographers and assignments for upcoming issues.</li>
 				<li>Problem solved and managed problems if the photos were not turned in on time.</li>
@@ -192,15 +200,15 @@
 		</div>
 	</div>
 	<div id="walmartNetwork" class="job">
-		<div class="headerWrapper">
-			<header>
-				<h2 class="company">Wal-Mart</h2>
-				<h3>Network Engineer - Intern</h3> 
-				<h4>Bentonville, AR</h4> 
-				<h4>May 2009 to August 2009</h4>
-			</header>
-		</div>
 		<div class="main">
+			<div class="headerWrapper">
+				<header>
+					<h2 class="company">Wal-Mart</h2>
+					<h3>Network Engineer - Intern</h3> 
+					<h4>Bentonville, AR</h4> 
+					<h4>May 2009 to August 2009</h4>
+				</header>
+			</div>
 			<ul>
 				<li>Repaired and configured routers and switches world-wide for individual Wal-Mart / Sam's Club stores.</li>
 				<li>Developed Perl scripts to automate changes</li>

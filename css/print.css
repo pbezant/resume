@@ -28,15 +28,20 @@ h2.title {
 }
 
 /* line 21, ../scss/print.scss */
+#print-button {
+  display: none;
+}
+
+/* line 24, ../scss/print.scss */
 header.main {
   text-align: center;
 }
-/* line 24, ../scss/print.scss */
+/* line 27, ../scss/print.scss */
 header.main h1 {
-  font: 3.4rem  'Milonga', cursive;
+  font: 3.4rem "Milonga", cursive;
 }
 
-/* line 31, ../scss/print.scss */
+/* line 34, ../scss/print.scss */
 body {
   font: 1.3rem Helvetica, Arial, sans-serif;
   *font-size: small;
@@ -47,31 +52,31 @@ body {
   margin: 0 auto;
   padding: 0 1em;
 }
-/* line 39, ../scss/print.scss */
+/* line 42, ../scss/print.scss */
 body > div {
   overflow: hidden;
   position: relative;
 }
 
-/* line 47, ../scss/print.scss */
+/* line 50, ../scss/print.scss */
 #education {
   text-align: center;
 }
-/* line 50, ../scss/print.scss */
+/* line 53, ../scss/print.scss */
 #education h2 {
   text-align: left;
 }
-/* line 53, ../scss/print.scss */
+/* line 56, ../scss/print.scss */
 #education h3 {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-/* line 58, ../scss/print.scss */
+/* line 61, ../scss/print.scss */
 #skills {
   display: none;
 }
 
-/* line 81, ../scss/print.scss */
+/* line 84, ../scss/print.scss */
 #workExperience .job {
   background: transparent;
   margin: 1.5rem;

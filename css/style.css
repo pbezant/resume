@@ -25,19 +25,33 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-/* line 39, ../scss/style.scss */
+/* line 40, ../scss/style.scss */
+body {
+  font: 1.3rem Helvetica, Arial, sans-serif;
+  *font-size: small;
+  /* hack retained to preserve specificity */
+  color: #444;
+  min-width: 320px;
+  margin: 0 auto;
+}
+/* line 48, ../scss/style.scss */
+body div {
+  overflow: hidden;
+}
+
+/* line 52, ../scss/style.scss */
 h2.title {
   padding: 0.5rem 0 0 1.5rem;
-  font-family: 'Milonga', cursive;
+  font-family: "Milonga", cursive;
   display: block;
   margin: 0 auto;
 }
 
-/* line 49, ../scss/style.scss */
+/* line 62, ../scss/style.scss */
 div.headerWrapper.main {
   min-height: 36.5rem;
 }
-/* line 52, ../scss/style.scss */
+/* line 65, ../scss/style.scss */
 div.headerWrapper.main header.main {
   display: block;
   margin: 15% auto 10%;
@@ -48,45 +62,66 @@ div.headerWrapper.main header.main {
   	}
   }*/
 }
-/* line 60, ../scss/style.scss */
+/* line 73, ../scss/style.scss */
 div.headerWrapper.main header.main img {
   width: 50%;
   max-width: 46rem;
 }
-/* line 64, ../scss/style.scss */
+/* line 77, ../scss/style.scss */
 div.headerWrapper.main header.main h1 {
   font-size: 3.4rem;
-  font-family: 'Milonga', cursive;
+  font-family: "Milonga", cursive;
 }
 @media (min-width: 930px) {
-  /* line 52, ../scss/style.scss */
+  /* line 65, ../scss/style.scss */
   div.headerWrapper.main header.main {
     margin: 13.8rem auto 0;
     min-height: 60rem;
   }
 }
 
-/* line 81, ../scss/style.scss */
-body {
-  font: 1.3rem Helvetica, Arial, sans-serif;
-  *font-size: small;
-  /* hack retained to preserve specificity */
-  color: #444;
-  min-width: 320px;
-  margin: 0 auto;
-  background: lightblue url(../images/stars-blue.png) 50% 0 repeat fixed;
+/* line 94, ../scss/style.scss */
+#print-button {
+  position: fixed;
+  top: 0rem;
+  right: 1%;
+  width: 8%;
+  min-width: 4.5rem;
+  max-width: 7rem;
+  padding: 1.5rem 1rem;
+  display: block;
+  background: #B8B8B8;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -webkit-box-shadow: #555555 0 0 4px 1px;
+  -moz-box-shadow: #555555 0 0 4px 1px;
+  box-shadow: #555555 0 0 4px 1px;
 }
-/* line 89, ../scss/style.scss */
-body div {
-  overflow: hidden;
+/* line 108, ../scss/style.scss */
+#print-button:hover {
+  -webkit-box-shadow: #555555 0 0 6px 1px;
+  -moz-box-shadow: #555555 0 0 6px 1px;
+  box-shadow: #555555 0 0 6px 1px;
 }
 
-/* line 94, ../scss/style.scss */
+/* line 112, ../scss/style.scss */
+#main-bg {
+  background: lightblue url(../images/stars-blue.png) 0 0 repeat fixed;
+}
+
+/* line 115, ../scss/style.scss */
 #skills {
   display: none;
   min-height: 36.5rem;
 }
-/* line 100, ../scss/style.scss */
+/* line 121, ../scss/style.scss */
 #skills ul > li > div {
   width: 95%;
   display: block;
@@ -95,80 +130,109 @@ body div {
   padding: 0.3rem;
   text-align: center;
 }
-/* line 107, ../scss/style.scss */
+/* line 128, ../scss/style.scss */
 #skills ul > li > div strong {
   font-size: 3rem;
 }
 
-/* line 125, ../scss/style.scss */
+/* line 146, ../scss/style.scss */
 #education {
   min-height: 36.5rem;
-  background: url(../images/paper_texture.png) 50% 0 repeat fixed;
+  background: url(../images/paper_texture.png) 0 0 repeat;
+  -webkit-box-shadow: #555555 0 0 4px 1px;
+  -moz-box-shadow: #555555 0 0 4px 1px;
+  box-shadow: #555555 0 0 4px 1px;
 }
-/* line 132, ../scss/style.scss */
+/* line 154, ../scss/style.scss */
 #education h3 {
   text-align: center;
   font-size: 2em;
   margin: 4rem 0;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
-/* line 137, ../scss/style.scss */
+/* line 159, ../scss/style.scss */
 #education h3:first-of-type {
   margin-top: 8rem;
 }
 
-/* line 146, ../scss/style.scss */
+/* line 168, ../scss/style.scss */
 #workExperience h3 {
   padding: 0.5rem 0;
 }
-/* line 149, ../scss/style.scss */
+/* line 171, ../scss/style.scss */
 #workExperience .job {
   min-height: 36.5rem;
-  padding: 4.2rem;
-  margin: 0.75rem auto;
+  margin: 1rem auto;
   overflow: hidden;
   -webkit-box-shadow: #555555 0 0 4px 1px;
   -moz-box-shadow: #555555 0 0 4px 1px;
   box-shadow: #555555 0 0 4px 1px;
 }
-/* line 157, ../scss/style.scss */
-#workExperience .job div.headerWrapper, #workExperience .job div.main {
+/* line 179, ../scss/style.scss */
+#workExperience .job div.main {
   max-width: 960px;
   margin: 0 auto;
+  padding: 4.2rem;
+  height: 100%;
 }
-/* line 161, ../scss/style.scss */
+/* line 185, ../scss/style.scss */
 #workExperience .job header {
   padding: 1rem;
+  padding-right: 0;
 }
-/* line 163, ../scss/style.scss */
+/* line 188, ../scss/style.scss */
 #workExperience .job header .company {
   text-align: left;
   text-indent: -999em;
   margin: 1rem 0;
 }
-/* line 172, ../scss/style.scss */
+/* line 197, ../scss/style.scss */
 #workExperience .job div.main {
   padding-bottom: 2rem;
 }
-/* line 176, ../scss/style.scss */
+/* line 200, ../scss/style.scss */
+#workExperience .job div.main ul {
+  clear: both;
+}
+/* line 202, ../scss/style.scss */
 #workExperience .job div.main ul li {
   margin-bottom: 1rem;
   margin-left: -3rem;
   list-style-type: none;
 }
 @media (min-width: 30em) {
-  /* line 188, ../scss/style.scss */
+  /* line 210, ../scss/style.scss */
+  #workExperience .job:after {
+    content: "";
+    min-height: 36.5rem;
+    min-width: 37%;
+    float: right;
+  }
+  /* line 219, ../scss/style.scss */
+  #workExperience .job div.main {
+    float: left;
+    width: 60%;
+  }
+  /* line 225, ../scss/style.scss */
+  #workExperience .job:nth-of-type(2n):after {
+    float: left;
+  }
+  /* line 228, ../scss/style.scss */
   #workExperience .job:nth-of-type(2n) div.main, #workExperience .job:nth-of-type(2n) header {
     text-align: right;
     float: right;
     clear: both;
   }
-  /* line 195, ../scss/style.scss */
-  #workExperience .job:nth-of-type(2n) header .company {
+  /* line 236, ../scss/style.scss */
+  #workExperience .job:nth-of-type(2n) .headerWrapper {
+    overflow: visible;
+  }
+  /* line 239, ../scss/style.scss */
+  #workExperience .job:nth-of-type(2n) .headerWrapper header .company {
     background-position: 100% 0 !important;
   }
 }
-/* line 205, ../scss/style.scss */
+/* line 251, ../scss/style.scss */
 #workExperience #bancvue {
   color: #fdffff;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(42%, #2e1054), color-stop(80%, #11061f));
@@ -177,17 +241,22 @@ body div {
   background: -o-linear-gradient(top, #2e1054 42%, #11061f 80%);
   background: linear-gradient(top, #2e1054 42%, #11061f 80%);
 }
-/* line 212, ../scss/style.scss */
-#workExperience #bancvue header .company {
-  background: url('../images/logo-bancVue.png?1373984228') no-repeat;
+/* line 254, ../scss/style.scss */
+#workExperience #bancvue:after {
+  background: rgba(0, 0, 0, 0) url("../images/spartan.svg") no-repeat 0 50%;
+  background-size: 120%;
+}
+/* line 262, ../scss/style.scss */
+#workExperience #bancvue .headerWrapper header .company {
+  background: url('../images/logo-bancVue.png?1368393302') no-repeat;
   background-size: contain;
   min-height: 4rem;
 }
-/* line 219, ../scss/style.scss */
+/* line 271, ../scss/style.scss */
 #workExperience #bancvue .main a, #workExperience #bancvue .main a:visited {
   color: #fff;
 }
-/* line 224, ../scss/style.scss */
+/* line 276, ../scss/style.scss */
 #workExperience #hostgator {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #49b5e4), color-stop(100%, #9cc866));
   background: -webkit-linear-gradient(top, #49b5e4 1%, #9cc866 100%);
@@ -202,67 +271,86 @@ body div {
   }
   */
 }
-/* line 234, ../scss/style.scss */
+/* line 279, ../scss/style.scss */
+#workExperience #hostgator:after {
+  background: rgba(0, 0, 0, 0) url("../images/snappy.svg") no-repeat 0 50%;
+  background-size: 120%;
+}
+/* line 290, ../scss/style.scss */
 #workExperience #hostgator header .company {
-  background: url('../images/logo-hostgator.png?1373984228') no-repeat;
+  background: url('../images/logo-hostgator.png?1368391757') no-repeat;
   background-size: contain;
   min-height: 2rem;
   min-width: 25rem;
   text-align: none;
 }
-/* line 247, ../scss/style.scss */
+/* line 303, ../scss/style.scss */
 #workExperience #gensuite {
   background: #5dcae7;
 }
-/* line 250, ../scss/style.scss */
+/* line 306, ../scss/style.scss */
+#workExperience #gensuite:after {
+  background: rgba(0, 0, 0, 0) url("../images/gensuite.svg") no-repeat 0 50%;
+  background-size: 120%;
+}
+/* line 310, ../scss/style.scss */
 #workExperience #gensuite header {
   font-family: Arial, Helvetica, sans-serif;
 }
-/* line 252, ../scss/style.scss */
+/* line 312, ../scss/style.scss */
 #workExperience #gensuite header .company {
-  background: url('../images/logo-gensuite.png?1373984228') no-repeat;
+  background: url('../images/logo-gensuite.png?1368384856') no-repeat;
   background-size: contain;
   min-height: 4rem;
 }
-/* line 259, ../scss/style.scss */
+/* line 319, ../scss/style.scss */
 #workExperience #osu {
   background: #ff9700;
 }
-/* line 262, ../scss/style.scss */
+/* line 321, ../scss/style.scss */
+#workExperience #osu:after {
+  background-size: 120%;
+}
+/* line 326, ../scss/style.scss */
 #workExperience #osu header .company {
-  background: url('../images/logo-osu.png?1373984228') no-repeat;
+  background: url('../images/logo-osu.png?1368398205') no-repeat;
   background-size: contain;
   min-height: 7rem;
   margin: 1rem;
 }
-/* line 270, ../scss/style.scss */
+/* line 334, ../scss/style.scss */
 #workExperience #ocolly {
   background-color: white;
   font-family: "Courier New", Courier, monospace;
 }
-/* line 274, ../scss/style.scss */
+/* line 338, ../scss/style.scss */
 #workExperience #ocolly header .company {
-  background: url('../images/logo-ocolly.png?1373984228') no-repeat;
+  background: url('../images/logo-ocolly.png?1368415663') no-repeat;
   background-size: contain;
   min-height: 6rem;
 }
-/* line 281, ../scss/style.scss */
+/* line 345, ../scss/style.scss */
 #workExperience #walmartDev, #workExperience #walmartNetwork {
   color: #FFF;
   background: #0872ba;
 }
-/* line 284, ../scss/style.scss */
+/* line 348, ../scss/style.scss */
+#workExperience #walmartDev:after, #workExperience #walmartNetwork:after {
+  background: rgba(0, 0, 0, 0) url("../images/walmart.svg") no-repeat 0 50%;
+  background-size: 120%;
+}
+/* line 352, ../scss/style.scss */
 #workExperience #walmartDev header, #workExperience #walmartNetwork header {
   font-family: Myriad, Arial, sans-serif;
 }
-/* line 286, ../scss/style.scss */
+/* line 354, ../scss/style.scss */
 #workExperience #walmartDev header .company, #workExperience #walmartNetwork header .company {
-  background: url('../images/logo-walmart.png?1373984228') no-repeat;
+  background: url('../images/logo-walmart.png?1368398583') no-repeat;
   background-size: contain;
   min-height: 4rem;
 }
 
-/* line 295, ../scss/style.scss */
+/* line 363, ../scss/style.scss */
 #volunteer ul {
   max-width: 89rem;
   margin: 1.5rem auto;

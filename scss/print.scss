@@ -18,6 +18,9 @@ h2.title{
 	font-family:times, serif;
 	margin:1rem 0;
 }
+#print-button{
+	display:none;
+}
 header.main{
 	//@include zen-grid-container;
 	text-align: center;

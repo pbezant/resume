@@ -36,6 +36,19 @@ html {
 h1,h2,h3,h4,h5,h6{
 	margin:0;
 }
+
+body{
+	font:1.3rem Helvetica, Arial, sans-serif;
+	*font-size:small; /* hack retained to preserve specificity */
+	color: #444;
+	min-width:320px;
+	margin:0 auto;
+	
+	//@include zen-grid-container; 
+	div{
+		overflow: hidden;
+	}
+}
 h2.title{
 	//max-width: 100rem;
 	padding: 0.5rem 0 0 1.5rem;
@@ -78,19 +91,27 @@ div.headerWrapper.main{
 		}
 	}
 }
-body{
-	font:1.3rem Helvetica, Arial, sans-serif;
-	*font-size:small; /* hack retained to preserve specificity */
-	color: #444;
-	min-width:320px;
-	margin:0 auto;
-	background:#ADD8E6 url(../images/stars-blue.png) 50% 0 repeat fixed;
-	//@include zen-grid-container; 
-	div{
-		overflow: hidden;
+#print-button{
+	position:fixed;
+	top:0rem;
+	right:1%; 
+	width:8%;
+	min-width:4.5rem;
+	max-width:7rem;
+	padding:1.5rem 1rem;
+	display: block;
+	background:#B8B8B8;
+	@include border-radius(4px, 4px);
+	@include border-top-left-radius(0);
+	@include border-top-right-radius(0);
+	@include box-shadow(#555 0 0 4px 1px);
+	&:hover{
+		@include box-shadow(#555 0 0 6px 1px);
 	}
 }
-
+#main-bg{
+	background:#ADD8E6 url(../images/stars-blue.png) 0 0 repeat fixed;
+}
 #skills{
 	display:none;
 	min-height:$section-height;
@@ -124,7 +145,8 @@ body{
 
 #education{
 	min-height:$section-height;
-	background:url(../images/paper_texture.png) 50% 0 repeat fixed;
+	background:url(../images/paper_texture.png) 0 0 repeat;
+	@include box-shadow(#555 0 0 4px 1px);
 	h2{
 		//text-align: left;
 		//background-color:$blue;
@@ -149,17 +171,20 @@ body{
 	.job{
 
 		min-height: $section-height;
-		padding:4.2rem;
-		margin:0.75rem auto;
+		
+		margin:1rem auto;
 		overflow:hidden;
 		@include box-shadow(#555 0 0 4px 1px);
 		
-		div.headerWrapper, div.main{
+		div.main{
 			max-width:960px;
 			margin:0 auto;
+			padding:4.2rem;
+			height:100%;
 		}
 		header{
 			padding:1rem;
+			padding-right:0;
 			.company{
 				text-align: left;
 				text-indent: -999em;
@@ -173,6 +198,7 @@ body{
 
 			padding-bottom:2rem;
 			ul{
+				clear:both;
 				li{
 					margin-bottom:1rem;
 					margin-left:-3rem;
@@ -181,40 +207,66 @@ body{
 			}
 		}
 		@include breakpoint(medium){
-			div.main{
+			&:after{
+				content: "";
+				min-height: 36.5rem;
+				min-width: 37%;
+				float: right;
 
+			}
+			.headerWrapper{
+			}
+			div.main{
+				float:left;
+				width:60%;
+				
 			}  
 			&:nth-of-type(2n){
+				&:after{
+					float:left;
+				}
 				div.main, header{
 					text-align: right;
 					float:right;
 					clear: both;
 				}
-				header{
-
-					.company{
-						background-position: 100% 0 !important;
-					}
-				} 
-
+				div.main{
+					
+				}
+				.headerWrapper{
+					overflow: visible;
+					header{
+						.company{
+							background-position: 100% 0 !important;
+						}
+					} 
+				}
 			}
 		}
 
 		
 	}
+	$background-y:50%;
+	$background-size:120%;
 	#bancvue{
-
 		color:#fdffff;
 		@include background(linear-gradient(top, #2e1054 42%, #11061f 80%));
-
-		header{
-			//font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-			.company{
-				@include background(image-url("logo-bancVue.png") no-repeat);
-				background-size:contain;
-				min-height:4rem;
+		&:after{
+				background: rgba(0, 0, 0, 0) url("../images/spartan.svg") no-repeat 0 $background-y;
+				background-size:$background-size;
+			}
+		.headerWrapper{
+			
+			header{
+				//font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+				.company{
+					@include background(image-url("logo-bancVue.png") no-repeat);
+					background-size:contain;
+					min-height:4rem;
+				}
 			}
 		}
+		
 		.main{
 			a, a:visited{
 				color:#fff;
@@ -224,6 +276,10 @@ body{
 	#hostgator{
 		@include background(linear-gradient(top, #49b5e4 1%, #9cc866 100%)); 
 		background-size:contain;
+		&:after{
+			background: rgba(0, 0, 0, 0) url("../images/snappy.svg") no-repeat 0 $background-y;
+			background-size:120%;
+		}
 		/*&:after{
 			content: url(../images/snappy.png);
 			height:80%;
@@ -247,6 +303,10 @@ body{
 	#gensuite{
 		//@include background-image(linear-gradient(top,#fff 50%, #00aeef 100%));
 		background:#5dcae7;
+		&:after{
+			background: rgba(0, 0, 0, 0) url("../images/gensuite.svg") no-repeat 0 $background-y;
+			background-size:120%;
+		}
 		header{
 			font-family: Arial, Helvetica, sans-serif;
 			.company{
@@ -258,6 +318,10 @@ body{
 	}
 	#osu{
 		background:#ff9700;
+		&:after{
+			//background: rgba(0, 0, 0, 0) url("../images/pistol-pete.svg") no-repeat 0 50%;
+			background-size:120%;
+		}
 		header{
 			.company{
 				@include background(image-url("logo-osu.png") no-repeat);
@@ -281,6 +345,10 @@ body{
 	#walmartDev, #walmartNetwork{
 		color:#FFF;
 		background:#0872ba;
+		&:after{
+			background: rgba(0, 0, 0, 0) url("../images/walmart.svg") no-repeat 0 $background-y;
+			background-size:120%;
+		}
 		header{
 			font-family: Myriad, Arial, sans-serif;
 			.company{
