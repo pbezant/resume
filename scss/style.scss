@@ -8,7 +8,7 @@ Add images then parralax
     @media (min-width: 930px) { @content; }
   }
   @else if $point == medium {
-    @media (min-width:30em) { @content; }
+    @media (min-width:38.5em) { @content; }
   }
   @else if $point == small {
     @media (max-width: 650px)  { @content; }
@@ -209,7 +209,7 @@ div.headerWrapper.main{
 		@include breakpoint(medium){
 			&:after{
 				content: "";
-				min-height: 36.5rem;
+				min-height: 40rem;
 				min-width: 37%;
 				float: right;
 
@@ -246,15 +246,17 @@ div.headerWrapper.main{
 
 		
 	}
-	$background-y:50%;
+	$background-y:0%;
 	$background-size:120%;
 	#bancvue{
 		color:#fdffff;
 		@include background(linear-gradient(top, #2e1054 42%, #11061f 80%));
-		&:after{
-				background: rgba(0, 0, 0, 0) url("../images/spartan.svg") no-repeat 0 $background-y;
-				background-size:$background-size;
-			}
+		@include breakpoint(medium){
+			&:after{
+					background: rgba(0, 0, 0, 0) url("../images/spartan.svg") no-repeat 0 $background-y;
+					background-size:$background-size;
+				}
+		}
 		.headerWrapper{
 			
 			header{
@@ -276,9 +278,11 @@ div.headerWrapper.main{
 	#hostgator{
 		@include background(linear-gradient(top, #49b5e4 1%, #9cc866 100%)); 
 		background-size:contain;
-		&:after{
-			background: rgba(0, 0, 0, 0) url("../images/snappy.svg") no-repeat 0 $background-y;
-			background-size:120%;
+		@include breakpoint(medium){
+			&:after{
+				background: rgba(0, 0, 0, 0) url("../images/snappy.png") no-repeat 0 $background-y;
+				background-size:100%;
+			}
 		}
 		/*&:after{
 			content: url(../images/snappy.png);
@@ -305,7 +309,7 @@ div.headerWrapper.main{
 		background:#5dcae7;
 		&:after{
 			background: rgba(0, 0, 0, 0) url("../images/gensuite.svg") no-repeat 0 $background-y;
-			background-size:120%;
+			background-size:$background-size;
 		}
 		header{
 			font-family: Arial, Helvetica, sans-serif;
@@ -319,8 +323,8 @@ div.headerWrapper.main{
 	#osu{
 		background:#ff9700;
 		&:after{
-			//background: rgba(0, 0, 0, 0) url("../images/pistol-pete.svg") no-repeat 0 50%;
-			background-size:120%;
+			background: rgba(0, 0, 0, 0) url("../images/pistol-pete.png") no-repeat 0 $background-y;
+			background-size:100%;
 		}
 		header{
 			.company{
@@ -347,7 +351,7 @@ div.headerWrapper.main{
 		background:#0872ba;
 		&:after{
 			background: rgba(0, 0, 0, 0) url("../images/walmart.svg") no-repeat 0 $background-y;
-			background-size:120%;
+			background-size:$background-size;
 		}
 		header{
 			font-family: Myriad, Arial, sans-serif;
