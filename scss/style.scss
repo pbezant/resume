@@ -16,11 +16,10 @@ Add images then parralax
 }
 
 @import "compass";
-/*
-@import "zen";
-$zen-column-count: 12;
-$zen-gutter-width:10px; 
-*/
+@media print{
+	@import "print";
+}
+@media screen{
 $section-height:36.5rem;
 $blue : #ADD8E6;
 $white: #fff;
@@ -49,6 +48,7 @@ body{
 		overflow: hidden;
 	}
 }
+
 h2.title{
 	//max-width: 100rem;
 	padding: 0.5rem 0 0 1.5rem;
@@ -370,6 +370,4 @@ div.headerWrapper.main{
 	}
 	
 }
-
-
-
+}
