@@ -36,7 +36,7 @@ Add images then parralax
   }
   /* line 25, ../scss/print.scss */
   header.main h1 {
-    font: 3.4rem "Milonga", cursive;
+    font: 3.4rem  'Milonga', cursive;
   }
 
   /* line 32, ../scss/print.scss */
@@ -116,7 +116,7 @@ Add images then parralax
   /* line 52, ../scss/style.scss */
   h2.title {
     padding: 0.5rem 0 0 1.5rem;
-    font-family: "Milonga", cursive;
+    font-family: 'Milonga', cursive;
     display: block;
     margin: 0 auto;
   }
@@ -144,7 +144,7 @@ Add images then parralax
   /* line 77, ../scss/style.scss */
   div.headerWrapper.main header.main h1 {
     font-size: 3.4rem;
-    font-family: "Milonga", cursive;
+    font-family: 'Milonga', cursive;
   }
   /* line 94, ../scss/style.scss */
   #print-button {
@@ -277,7 +277,7 @@ Add images then parralax
   }
   /* line 264, ../scss/style.scss */
   #workExperience #bancvue .headerWrapper header .company {
-    background: url('../images/logo-bancVue.png?1368393302') no-repeat;
+    background: url('../images/logo-bancVue.png?1373984228') no-repeat;
     background-size: contain;
     min-height: 4rem;
   }
@@ -302,7 +302,7 @@ Add images then parralax
   }
   /* line 294, ../scss/style.scss */
   #workExperience #hostgator header .company {
-    background: url('../images/logo-hostgator.png?1368391757') no-repeat;
+    background: url('../images/logo-hostgator.png?1373984228') no-repeat;
     background-size: contain;
     min-height: 2rem;
     min-width: 25rem;
@@ -323,7 +323,7 @@ Add images then parralax
   }
   /* line 316, ../scss/style.scss */
   #workExperience #gensuite header .company {
-    background: url('../images/logo-gensuite.png?1368384856') no-repeat;
+    background: url('../images/logo-gensuite.png?1373984228') no-repeat;
     background-size: contain;
     min-height: 4rem;
   }
@@ -338,7 +338,7 @@ Add images then parralax
   }
   /* line 330, ../scss/style.scss */
   #workExperience #osu header .company {
-    background: url('../images/logo-osu.png?1368398205') no-repeat;
+    background: url('../images/logo-osu.png?1373984228') no-repeat;
     background-size: contain;
     min-height: 7rem;
     margin: 1rem;
@@ -350,7 +350,7 @@ Add images then parralax
   }
   /* line 342, ../scss/style.scss */
   #workExperience #ocolly header .company {
-    background: url('../images/logo-ocolly.png?1368415663') no-repeat;
+    background: url('../images/logo-ocolly.png?1373984228') no-repeat;
     background-size: contain;
     min-height: 6rem;
   }
@@ -370,7 +370,7 @@ Add images then parralax
   }
   /* line 358, ../scss/style.scss */
   #workExperience #walmartDev header .company, #workExperience #walmartNetwork header .company {
-    background: url('../images/logo-walmart.png?1368398583') no-repeat;
+    background: url('../images/logo-walmart.png?1373984228') no-repeat;
     background-size: contain;
     min-height: 4rem;
   }
