@@ -21,6 +21,7 @@ Add images then parralax
 	@import "print";
 }
 @media screen{
+
 $section-height:36.5rem;
 $blue : #ADD8E6;
 $white: #fff;
@@ -28,8 +29,8 @@ $white: #fff;
 
 html { 
 	font-size: 62.5%; 
+}
 
-} 
 h1,h2,h3,h4,h5,h6{
 	margin:0;
 }
@@ -42,294 +43,313 @@ body{
 	margin:0 auto;
 	
 	//@include zen-grid-container; 
-	div{
+	> div{
 		overflow: hidden;
 	}
-}
 
-h2.title{
-	//max-width: 100rem;
-	padding: 0.5rem 0 0 1.5rem;
-	font-family: 'Milonga', cursive;
-	display: block;
-	margin: 0 auto;
-	@include breakpoint(medium){
-		//text-align:center;
-	}
-}
-div.headerWrapper.main{
-	min-height:$section-height;
-	
-	header.main{
+	h2.title{
+		//max-width: 100rem;
+		padding: 0.5rem 0 0 1.5rem;
+		font-family: 'Milonga', cursive;
 		display: block;
-		margin:15% auto 10%;
-
-		text-align: center;
- 
-		//@include zen-grid-container;
-		
-		img{
-			width:50%;
-			max-width:46rem;
-		}
-		h1{
-			font-size:3.4rem;
-			font-family:'Milonga', cursive;
-		}
-		h2{
-		}
-		/*@media all (min-width:70rem){
-			h1{
-				font-size: 5rem;
-			}
-		}*/
-		@include breakpoint(large){
-				margin:13.8rem auto 0;
-				min-height: 60rem;
-		}
-	}
-}
-#print-button{
-	position:fixed;
-	top:0rem;
-	right:1%; 
-	width:8%;
-	min-width:4.5rem;
-	max-width:7rem;
-	padding:1.5rem 1rem;
-	display: block;
-	background:#B8B8B8;
-	@include border-radius(4px, 4px);
-	@include border-top-left-radius(0);
-	@include border-top-right-radius(0);
-	@include box-shadow(#555 0 0 4px 1px);
-	&:hover{
-		@include box-shadow(#555 0 0 6px 1px);
-	}
-}
-#main-bg{
-	background:#ADD8E6 url(../images/stars-blue.png) 0 0 repeat fixed;
-}
-#skills{
-	display:none;
-	min-height:$section-height;
-	h3{
-
-	}
-	ul > li > div{
-		width:95%;
-		display: block;
-		height:30rem;
-		margin:1.5rem auto;
-		padding:0.3rem;
-		text-align: center;
-		strong{
-			font-size:3rem;
-		}
-		//@include box-shadow(#555 0 0 4px 1px);
-		&#lang{
-			//@include zen-grid-item(3,1);
-		}
-		&#os{
-			//@include zen-grid-item(3,9);
-		}
-		&#db{
-			//@include zen-grid-item(3,5);
-		}
-	}
-}
-
-
-
-#education{
-	min-height:$section-height;
-	background:url(../images/paper_texture.png) 0 0 repeat;
-	@include box-shadow(#555 0 0 4px 1px);
-	h2{
-		//text-align: left;
-		//background-color:$blue;
-	}
-	h3{
-		text-align: center;
-		font-size:2em;
-		margin:4rem 0;
-		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-		&:first-of-type{
-			margin-top:8rem;
-		}
-	}
-}
-
-
-#workExperience{
-
-	h3{
-		padding:0.5rem 0;
-	}
-	.job{
-
-		min-height: $section-height;
-		
-		margin:1rem auto;
-		overflow:hidden;
-		@include box-shadow(#555 0 0 4px 1px);
-		
-		div.main{
-			max-width:960px;
-			margin:0 auto;
-			padding:4.2rem;
-			height:100%;
-		}
-		header{
-			padding:1rem;
-			padding-right:0;
-			.company{
-				text-align: left;
-				text-indent: -999em;
-				margin:1rem 0;
-			}
-			h2,h3,h4{
-			
-			}
-		}
-		div.main{
-
-			padding-bottom:2rem;
-			ul{
-				clear:both;
-				li{
-					margin-bottom:1rem;
-					margin-left:-3rem;
-					list-style-type: none;
-				}
-			}
-		}
+		margin: 0 auto;
 		@include breakpoint(medium){
-			&:after{
-				content: "";
-				min-height: 40rem;
-				min-width: 37%;
-				float: right;
+			//text-align:center;
+		}
+	}
+	div.headerWrapper.main{
+		min-height:$section-height;
+		
+		header.main{
+			display: block;
+			margin:15% auto 10%;
 
+			text-align: center;
+	 
+			//@include zen-grid-container;
+			
+			img{
+				width:50%;
+				max-width:46rem;
 			}
-			.headerWrapper{
+			h1{
+				font-size:3.4rem;
+				font-family:'Milonga', cursive;
+			}
+			h2{
+			}
+			/*@media all (min-width:70rem){
+				h1{
+					font-size: 5rem;
+				}
+			}*/
+			@include breakpoint(large){
+					margin:13.8rem auto 0;
+					min-height: 60rem;
+			}
+		}
+	}
+	#print-button{
+		position:fixed;
+		top:0rem;
+		right:1%; 
+		width:8%;
+		min-width:4.5rem;
+		max-width:7rem;
+		padding:1.5rem 1rem;
+		display: block;
+		background:#B8B8B8;
+		@include border-radius(4px, 4px);
+		@include border-top-left-radius(0);
+		@include border-top-right-radius(0);
+		@include box-shadow(#555 0 0 4px 1px);
+		&:hover{
+			@include box-shadow(#555 0 0 6px 1px);
+		}
+	}
+	#main-bg{
+		background:#ADD8E6 url(../images/stars-blue.png) 0 0 repeat fixed;
+	}
+	#skills{
+		display:none;
+		min-height:$section-height;
+		h3{
+
+		}
+		ul > li > div{
+			width:95%;
+			display: block;
+			height:30rem;
+			margin:1.5rem auto;
+			padding:0.3rem;
+			text-align: center;
+			strong{
+				font-size:3rem;
+			}
+			//@include box-shadow(#555 0 0 4px 1px);
+			&#lang{
+				//@include zen-grid-item(3,1);
+			}
+			&#os{
+				//@include zen-grid-item(3,9);
+			}
+			&#db{
+				//@include zen-grid-item(3,5);
+			}
+		}
+	}
+
+
+
+	#education{
+		min-height:$section-height;
+		background:url(../images/paper_texture.png) 0 0 repeat;
+		@include box-shadow(#555 0 0 4px 1px);
+		h2{
+			//text-align: left;
+			//background-color:$blue;
+		}
+		h3{
+			text-align: center;
+			font-size:2em;
+			margin:4rem 0;
+			font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+			&:first-of-type{
+				margin-top:8rem;
+			}
+		}
+	}
+
+
+	#workExperience{
+
+		h3{
+			padding:0.5rem 0;
+		}
+		.job{
+
+			min-height: $section-height;
+			
+			margin:1rem auto;
+			overflow:hidden;
+			@include box-shadow(#555 0 0 4px 1px);
+			
+			div.main{
+				max-width:960px;
+				margin:0 auto;
+				padding:4.2rem;
+				height:100%;
+			}
+			header{
+				padding:1rem;
+				padding-right:0;
+				.company{
+					text-align: left;
+					text-indent: -999em;
+					margin:1rem 0;
+				}
+				h2,h3,h4{
+				
+				}
 			}
 			div.main{
-				float:left;
-				width:60%;
-				
-			}  
-			&:nth-of-type(2n){
+
+				padding-bottom:2rem;
+				ul{
+					clear:both;
+					li{
+						margin-bottom:1rem;
+						margin-left:-3rem;
+						list-style-type: none;
+					}
+				}
+			}
+			@include breakpoint(medium){
 				&:after{
-					float:left;
-				}
-				div.main, header{
-					text-align: right;
-					float:right;
-					clear: both;
-				}
-				div.main{
-					
+					content: "";
+					min-height: 40rem;
+					min-width: 37%;
+					float: right;
+
 				}
 				.headerWrapper{
-					overflow: visible;
-					header{
-						.company{
-							background-position: 100% 0 !important;
-						}
-					} 
+				}
+				div.main{
+					float:left;
+					width:60%;
+					
+				}  
+				&:nth-of-type(2n){
+					&:after{
+						float:left;
+					}
+					div.main, header{
+						text-align: right;
+						float:right;
+						clear: both;
+					}
+					div.main{
+						
+					}
+					.headerWrapper{
+						overflow: visible;
+						header{
+							.company{
+								background-position: 100% 0 !important;
+							}
+						} 
+					}
 				}
 			}
-		}
 
-		
-	}
-	$background-y:0%;
-	$background-size:120%;
-	#bancvue{
-		color:#fdffff;
-		@include background(linear-gradient(top, #2e1054 42%, #11061f 80%));
-		@include breakpoint(medium){
-			&:after{
-					background: rgba(0, 0, 0, 0) url("../images/spartan.svg") no-repeat 0 $background-y;
-					background-size:$background-size;
-				}
-		}
-		.headerWrapper{
 			
-			header{
-				//font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-				.company{
-					@include background(image-url("logo-bancVue.png") no-repeat);
-					background-size:contain;
-					min-height:4rem;
+		}
+		$background-y:0%;
+		$background-size:120%;
+		#bancvue{
+			color:#fdffff;
+			@include background(linear-gradient(top, #2e1054 42%, #11061f 80%));
+			@include breakpoint(medium){
+				&:after{
+						background: rgba(0, 0, 0, 0) url("../images/spartan.svg") no-repeat 0 $background-y;
+						background-size:$background-size;
+					}
+			}
+			.headerWrapper{
+				
+				header{
+					//font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+					.company{
+						@include background(image-url("logo-bancVue.png") no-repeat);
+						background-size:contain;
+						min-height:4rem;
+					}
+				}
+			}
+			
+			.main{
+				a, a:visited{
+					color:#fff;
 				}
 			}
 		}
-		
-		.main{
-			a, a:visited{
-				color:#fff;
+		#hostgator{
+			@include background(linear-gradient(top, #49b5e4 1%, #9cc866 100%)); 
+			background-size:contain;
+			@include breakpoint(medium){
+				&:after{
+					background: rgba(0, 0, 0, 0) url("../images/snappy.png") no-repeat 0 $background-y;
+					background-size:100%;
+				}
+			}
+			/*&:after{
+				content: url(../images/snappy.png);
+				height:80%;
+				right:50%;
+			}
+			*/
+			header{
+				.company{
+					@include background(image-url("logo-hostgator.png") no-repeat);
+					background-size:contain;
+					min-height:2rem;
+					min-width: 25rem;
+					text-align: none;
+
+
+				}
+				//background:url(../images/snappy.png) no-repeat center left;
+			}
+
+		}
+		#gensuite{
+			//@include background-image(linear-gradient(top,#fff 50%, #00aeef 100%));
+			background:#5dcae7;
+			&:after{
+				background: rgba(0, 0, 0, 0) url("../images/gensuite.svg") no-repeat 0 $background-y;
+				background-size:$background-size;
+			}
+			header{
+				font-family: Arial, Helvetica, sans-serif;
+				.company{
+					@include background(image-url("logo-gensuite.png") no-repeat);
+					background-size:contain;
+					min-height: 4rem;
+				}
 			}
 		}
-	}
-	#hostgator{
-		@include background(linear-gradient(top, #49b5e4 1%, #9cc866 100%)); 
-		background-size:contain;
-		@include breakpoint(medium){
+		#osu{
+			background:#ff9700;
 			&:after{
-				background: rgba(0, 0, 0, 0) url("../images/snappy.png") no-repeat 0 $background-y;
+				background: rgba(0, 0, 0, 0) url("../images/pistol-pete.png") no-repeat 0 $background-y;
 				background-size:100%;
 			}
-		}
-		/*&:after{
-			content: url(../images/snappy.png);
-			height:80%;
-			right:50%;
-		}
-		*/
-		header{
-			.company{
-				@include background(image-url("logo-hostgator.png") no-repeat);
-				background-size:contain;
-				min-height:2rem;
-				min-width: 25rem;
-				text-align: none;
-
-
-			}
-			//background:url(../images/snappy.png) no-repeat center left;
-		}
-
-	}
-	#gensuite{
-		//@include background-image(linear-gradient(top,#fff 50%, #00aeef 100%));
-		background:#5dcae7;
-		&:after{
-			background: rgba(0, 0, 0, 0) url("../images/gensuite.svg") no-repeat 0 $background-y;
-			background-size:$background-size;
-		}
-		header{
-			font-family: Arial, Helvetica, sans-serif;
-			.company{
-				@include background(image-url("logo-gensuite.png") no-repeat);
-				background-size:contain;
-				min-height: 4rem;
+			header{
+				.company{
+					@include background(image-url("logo-osu.png") no-repeat);
+					background-size:contain;
+					min-height: 7rem;
+					margin:1rem;
+				}
 			}
 		}
-	}
-	#osu{
-		background:#ff9700;
-		&:after{
-			background: rgba(0, 0, 0, 0) url("../images/pistol-pete.png") no-repeat 0 $background-y;
-			background-size:100%;
+		#ocolly{
+			background-color:$white;
+			font-family:"Courier New", Courier, monospace;
+			header{
+				.company{
+					@include background(image-url("logo-ocolly.png") no-repeat);
+					background-size:contain;
+					min-height: 6rem;
+				}
+			}
 		}
-		header{
-			.company{
-				@include background(image-url("logo-osu.png") no-repeat);
-				background-size:contain;
-				min-height: 7rem;
-				margin:1rem;
+		#walmartDev, #walmartNetwork{
+			color:#FFF;
+			background:#0872ba;
+			&:after{
+				background: rgba(0, 0, 0, 0) url("../images/walmart.svg") no-repeat 0 $background-y;
+				background-size:$background-size;
 			}
 		}
 	}
@@ -340,7 +360,7 @@ div.headerWrapper.main{
 			background: rgba(0, 0, 0, 0) url("../images/o-state.svg") no-repeat 0 50%;
 			background-size:contain;
 			opacity: 0.9;
-			width:44%;
+			width:40%;
 		}
 		@include breakpoint(medium){
 			.main{
@@ -355,28 +375,12 @@ div.headerWrapper.main{
 			}
 		}
 	}
-	#walmartDev, #walmartNetwork{
-		color:#FFF;
-		background:#0872ba;
-		&:after{
-			background: rgba(0, 0, 0, 0) url("../images/walmart.svg") no-repeat 0 $background-y;
-			background-size:$background-size;
+	#volunteer{
+		ul{
+			max-width: 89rem;
+			margin:1.5rem auto;
 		}
-		header{
-			font-family: Myriad, Arial, sans-serif;
-			.company{
-				@include background(image-url("logo-walmart.png") no-repeat);
-				background-size:contain;
-				min-height: 4rem;
-			}
-		}
+		
 	}
-}
-#volunteer{
-	ul{
-		max-width: 89rem;
-		margin:1.5rem auto;
-	}
-	
 }
 }
