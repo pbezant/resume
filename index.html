@@ -11,29 +11,7 @@
 	<link rel="stylesheet" media="screen" href="flexslider.css" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script src="js/jquery.flexslider.js"></script>
-	<script type="text/javascript" charset="utf-8">
-	  $(window).load(function() {
-	  	if (window.matchMedia("screen").matches) {
-		    $('.flexslider').flexslider();
-		    parrallaxin();
-		}
-	  });
-	  function parrallaxin(){
-	  	$('[data-type="background"]').each(function(){
-		        var $bgobj = $(this); // assigning the object
-		     
-		        $(window).scroll(function() {
-		           var yPos = -($(window).scrollTop() / $bgobj.data('speed')); 
-		            // var yPos = -($(window).scrollTop() * $bgobj.data('speed'))/2; 
-		            // Put together our final background position
-		            var coords = '0 '+ yPos + 'px';
-		 
-		            // Move the background
-		            $bgobj.css({ backgroundPosition: coords });
-		        }); 
-		    });    
-	  }
-	</script>
+	
 	<!-- /Flexslider --> 
 	
 </head>
@@ -76,13 +54,7 @@
 		</ul>
 	</div>
 </div>
-<h2 class="title">EDUCATION</h2>
-<!--<div id="education" data-type="background" data-speed="1">-->
-	<div id="education" >
-	
-	<h3>Bachelor of Science in Information Systems Management</h3>
-	<h3>Oklahoma State University</h2>
-</div>
+
 
 <div id="workExperience">
 	<h2 class="title">WORK EXPERIENCE</h2>
@@ -120,7 +92,6 @@
 				<ul>
 					<li>Assisted 40 customers or more per day by chat and phone with issues of their web hosting.</li>
 					<li>Utilized CPanel in troubleshooting issues and instructing customers how to use the application</li>
-					<li></li>
 				</ul>
 		</div>
 	</div>
@@ -218,6 +189,13 @@
 		</div>
 	</div>
 </div><!--Work Experience -->
+<h2 class="title">EDUCATION</h2>
+<!--<div id="education" data-type="background" data-speed="1">-->
+	<div id="education" >
+	
+	<h3>Bachelor of Science in Information Systems Management</h3>
+	<h3>Oklahoma State University</h2>
+</div>
 <div id="volunteer">
 <h2 class="title">VOLUNTEER WORK AND ACTIVITIES </h2>
 	<ul>
@@ -230,4 +208,27 @@
 </div>
 </div>
 </body>
+<script type="text/javascript" charset="utf-8">
+	  $(window).load(function() {
+	  	if (window.matchMedia("screen").matches) {
+		    $('.flexslider').flexslider();
+		    parrallaxin();
+		}
+	  });
+	  function parrallaxin(){
+	  	$('[data-type="background"]').each(function(){
+		        var $bgobj = $(this); // assigning the object
+		     
+		        $(window).scroll(function() {
+		           var yPos = -($(window).scrollTop() / $bgobj.data('speed')); 
+		            // var yPos = -($(window).scrollTop() * $bgobj.data('speed'))/2; 
+		            // Put together our final background position
+		            var coords = '0 '+ yPos + 'px';
+		 
+		            // Move the background
+		            $bgobj.css({ backgroundPosition: coords });
+		        }); 
+		    });    
+	  }
+	</script>
 </html>

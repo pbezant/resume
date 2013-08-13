@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Milonga");
 /*
 TODO:
 Add images then parralax
@@ -81,39 +82,38 @@ Add images then parralax
   }
 }
 @media screen {
-  @import url(http://fonts.googleapis.com/css?family=Milonga);
-  /* line 29, ../scss/style.scss */
+  /* line 27, ../scss/style.scss */
   * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  /* line 31, ../scss/style.scss */
+  /* line 29, ../scss/style.scss */
   html {
     font-size: 62.5%;
   }
 
-  /* line 35, ../scss/style.scss */
+  /* line 33, ../scss/style.scss */
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
   }
 
-  /* line 39, ../scss/style.scss */
+  /* line 37, ../scss/style.scss */
   body {
-    font: 1.3rem Helvetica, Arial, sans-serif;
+    font: 1.4rem Helvetica, Arial, sans-serif;
     *font-size: small;
     /* hack retained to preserve specificity */
     color: #444;
     min-width: 320px;
     margin: 0 auto;
   }
-  /* line 47, ../scss/style.scss */
+  /* line 45, ../scss/style.scss */
   body div {
     overflow: hidden;
   }
 
-  /* line 52, ../scss/style.scss */
+  /* line 50, ../scss/style.scss */
   h2.title {
     padding: 0.5rem 0 0 1.5rem;
     font-family: "Milonga", cursive;
@@ -121,11 +121,11 @@ Add images then parralax
     margin: 0 auto;
   }
 
-  /* line 62, ../scss/style.scss */
+  /* line 60, ../scss/style.scss */
   div.headerWrapper.main {
     min-height: 36.5rem;
   }
-  /* line 65, ../scss/style.scss */
+  /* line 63, ../scss/style.scss */
   div.headerWrapper.main header.main {
     display: block;
     margin: 15% auto 10%;
@@ -136,17 +136,17 @@ Add images then parralax
     	}
     }*/
   }
-  /* line 73, ../scss/style.scss */
+  /* line 71, ../scss/style.scss */
   div.headerWrapper.main header.main img {
     width: 50%;
     max-width: 46rem;
   }
-  /* line 77, ../scss/style.scss */
+  /* line 75, ../scss/style.scss */
   div.headerWrapper.main header.main h1 {
     font-size: 3.4rem;
     font-family: "Milonga", cursive;
   }
-  /* line 94, ../scss/style.scss */
+  /* line 92, ../scss/style.scss */
   #print-button {
     position: fixed;
     top: 0rem;
@@ -170,24 +170,24 @@ Add images then parralax
     -moz-box-shadow: #555555 0 0 4px 1px;
     box-shadow: #555555 0 0 4px 1px;
   }
-  /* line 108, ../scss/style.scss */
+  /* line 106, ../scss/style.scss */
   #print-button:hover {
     -webkit-box-shadow: #555555 0 0 6px 1px;
     -moz-box-shadow: #555555 0 0 6px 1px;
     box-shadow: #555555 0 0 6px 1px;
   }
 
-  /* line 112, ../scss/style.scss */
+  /* line 110, ../scss/style.scss */
   #main-bg {
     background: lightblue url(../images/stars-blue.png) 0 0 repeat fixed;
   }
 
-  /* line 115, ../scss/style.scss */
+  /* line 113, ../scss/style.scss */
   #skills {
     display: none;
     min-height: 36.5rem;
   }
-  /* line 121, ../scss/style.scss */
+  /* line 119, ../scss/style.scss */
   #skills ul > li > div {
     width: 95%;
     display: block;
@@ -196,12 +196,12 @@ Add images then parralax
     padding: 0.3rem;
     text-align: center;
   }
-  /* line 128, ../scss/style.scss */
+  /* line 126, ../scss/style.scss */
   #skills ul > li > div strong {
     font-size: 3rem;
   }
 
-  /* line 146, ../scss/style.scss */
+  /* line 144, ../scss/style.scss */
   #education {
     min-height: 36.5rem;
     background: url(../images/paper_texture.png) 0 0 repeat;
@@ -209,23 +209,23 @@ Add images then parralax
     -moz-box-shadow: #555555 0 0 4px 1px;
     box-shadow: #555555 0 0 4px 1px;
   }
-  /* line 154, ../scss/style.scss */
+  /* line 152, ../scss/style.scss */
   #education h3 {
     text-align: center;
     font-size: 2em;
     margin: 4rem 0;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   }
-  /* line 159, ../scss/style.scss */
+  /* line 157, ../scss/style.scss */
   #education h3:first-of-type {
     margin-top: 8rem;
   }
 
-  /* line 168, ../scss/style.scss */
+  /* line 166, ../scss/style.scss */
   #workExperience h3 {
     padding: 0.5rem 0;
   }
-  /* line 171, ../scss/style.scss */
+  /* line 169, ../scss/style.scss */
   #workExperience .job {
     min-height: 36.5rem;
     margin: 1rem auto;
@@ -234,39 +234,39 @@ Add images then parralax
     -moz-box-shadow: #555555 0 0 4px 1px;
     box-shadow: #555555 0 0 4px 1px;
   }
-  /* line 179, ../scss/style.scss */
+  /* line 177, ../scss/style.scss */
   #workExperience .job div.main {
     max-width: 960px;
     margin: 0 auto;
     padding: 4.2rem;
     height: 100%;
   }
-  /* line 185, ../scss/style.scss */
+  /* line 183, ../scss/style.scss */
   #workExperience .job header {
     padding: 1rem;
     padding-right: 0;
   }
-  /* line 188, ../scss/style.scss */
+  /* line 186, ../scss/style.scss */
   #workExperience .job header .company {
     text-align: left;
     text-indent: -999em;
     margin: 1rem 0;
   }
-  /* line 197, ../scss/style.scss */
+  /* line 195, ../scss/style.scss */
   #workExperience .job div.main {
     padding-bottom: 2rem;
   }
-  /* line 200, ../scss/style.scss */
+  /* line 198, ../scss/style.scss */
   #workExperience .job div.main ul {
     clear: both;
   }
-  /* line 202, ../scss/style.scss */
+  /* line 200, ../scss/style.scss */
   #workExperience .job div.main ul li {
     margin-bottom: 1rem;
     margin-left: -3rem;
     list-style-type: none;
   }
-  /* line 251, ../scss/style.scss */
+  /* line 249, ../scss/style.scss */
   #workExperience #bancvue {
     color: #fdffff;
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(42%, #2e1054), color-stop(80%, #11061f));
@@ -275,17 +275,17 @@ Add images then parralax
     background: -o-linear-gradient(top, #2e1054 42%, #11061f 80%);
     background: linear-gradient(top, #2e1054 42%, #11061f 80%);
   }
-  /* line 264, ../scss/style.scss */
+  /* line 262, ../scss/style.scss */
   #workExperience #bancvue .headerWrapper header .company {
     background: url('../images/logo-bancVue.png?1368393302') no-repeat;
     background-size: contain;
     min-height: 4rem;
   }
-  /* line 273, ../scss/style.scss */
+  /* line 271, ../scss/style.scss */
   #workExperience #bancvue .main a, #workExperience #bancvue .main a:visited {
     color: #fff;
   }
-  /* line 278, ../scss/style.scss */
+  /* line 276, ../scss/style.scss */
   #workExperience #hostgator {
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #49b5e4), color-stop(100%, #9cc866));
     background: -webkit-linear-gradient(top, #49b5e4 1%, #9cc866 100%);
@@ -300,7 +300,7 @@ Add images then parralax
     }
     */
   }
-  /* line 294, ../scss/style.scss */
+  /* line 292, ../scss/style.scss */
   #workExperience #hostgator header .company {
     background: url('../images/logo-hostgator.png?1368391757') no-repeat;
     background-size: contain;
@@ -308,81 +308,88 @@ Add images then parralax
     min-width: 25rem;
     text-align: none;
   }
-  /* line 307, ../scss/style.scss */
+  /* line 305, ../scss/style.scss */
   #workExperience #gensuite {
     background: #5dcae7;
   }
-  /* line 310, ../scss/style.scss */
+  /* line 308, ../scss/style.scss */
   #workExperience #gensuite:after {
     background: rgba(0, 0, 0, 0) url("../images/gensuite.svg") no-repeat 0 0%;
     background-size: 120%;
   }
-  /* line 314, ../scss/style.scss */
+  /* line 312, ../scss/style.scss */
   #workExperience #gensuite header {
     font-family: Arial, Helvetica, sans-serif;
   }
-  /* line 316, ../scss/style.scss */
+  /* line 314, ../scss/style.scss */
   #workExperience #gensuite header .company {
     background: url('../images/logo-gensuite.png?1368384856') no-repeat;
     background-size: contain;
     min-height: 4rem;
   }
-  /* line 323, ../scss/style.scss */
+  /* line 321, ../scss/style.scss */
   #workExperience #osu {
     background: #ff9700;
   }
-  /* line 325, ../scss/style.scss */
+  /* line 323, ../scss/style.scss */
   #workExperience #osu:after {
     background: rgba(0, 0, 0, 0) url("../images/pistol-pete.png") no-repeat 0 0%;
     background-size: 100%;
   }
-  /* line 330, ../scss/style.scss */
+  /* line 328, ../scss/style.scss */
   #workExperience #osu header .company {
     background: url('../images/logo-osu.png?1368398205') no-repeat;
     background-size: contain;
     min-height: 7rem;
     margin: 1rem;
   }
-  /* line 338, ../scss/style.scss */
+  /* line 336, ../scss/style.scss */
   #workExperience #ocolly {
     background-color: white;
     font-family: "Courier New", Courier, monospace;
   }
-  /* line 342, ../scss/style.scss */
+  /* line 339, ../scss/style.scss */
+  #workExperience #ocolly:after {
+    background: rgba(0, 0, 0, 0) url("../images/o-state.svg") no-repeat 0 50%;
+    background-size: contain;
+    opacity: 0.9;
+    width: 44%;
+  }
+  /* line 351, ../scss/style.scss */
   #workExperience #ocolly header .company {
     background: url('../images/logo-ocolly.png?1368415663') no-repeat;
     background-size: contain;
     min-height: 6rem;
   }
-  /* line 349, ../scss/style.scss */
+  /* line 358, ../scss/style.scss */
   #workExperience #walmartDev, #workExperience #walmartNetwork {
     color: #FFF;
     background: #0872ba;
   }
-  /* line 352, ../scss/style.scss */
+  /* line 361, ../scss/style.scss */
   #workExperience #walmartDev:after, #workExperience #walmartNetwork:after {
     background: rgba(0, 0, 0, 0) url("../images/walmart.svg") no-repeat 0 0%;
     background-size: 120%;
   }
-  /* line 356, ../scss/style.scss */
+  /* line 365, ../scss/style.scss */
   #workExperience #walmartDev header, #workExperience #walmartNetwork header {
     font-family: Myriad, Arial, sans-serif;
   }
-  /* line 358, ../scss/style.scss */
+  /* line 367, ../scss/style.scss */
   #workExperience #walmartDev header .company, #workExperience #walmartNetwork header .company {
     background: url('../images/logo-walmart.png?1368398583') no-repeat;
     background-size: contain;
     min-height: 4rem;
   }
 
-  /* line 367, ../scss/style.scss */
+  /* line 376, ../scss/style.scss */
   #volunteer ul {
     max-width: 89rem;
     margin: 1.5rem auto;
   }
 }
 @media screen and (min-width: 930px) {
-  /* line 65, ../scss/style.scss */
+  /* line 63, ../scss/style.scss */
   div.headerWrapper.main header.main {
     margin: 13.8rem auto 0;
     min-height: 60rem;
@@ -390,48 +397,54 @@ Add images then parralax
 }
 
 @media screen and (min-width: 38.5em) {
-  /* line 210, ../scss/style.scss */
+  /* line 208, ../scss/style.scss */
   #workExperience .job:after {
     content: "";
     min-height: 40rem;
     min-width: 37%;
     float: right;
   }
-  /* line 219, ../scss/style.scss */
+  /* line 217, ../scss/style.scss */
   #workExperience .job div.main {
     float: left;
     width: 60%;
   }
-  /* line 225, ../scss/style.scss */
+  /* line 223, ../scss/style.scss */
   #workExperience .job:nth-of-type(2n):after {
     float: left;
   }
-  /* line 228, ../scss/style.scss */
+  /* line 226, ../scss/style.scss */
   #workExperience .job:nth-of-type(2n) div.main, #workExperience .job:nth-of-type(2n) header {
     text-align: right;
     float: right;
     clear: both;
   }
-  /* line 236, ../scss/style.scss */
+  /* line 234, ../scss/style.scss */
   #workExperience .job:nth-of-type(2n) .headerWrapper {
     overflow: visible;
   }
-  /* line 239, ../scss/style.scss */
+  /* line 237, ../scss/style.scss */
   #workExperience .job:nth-of-type(2n) .headerWrapper header .company {
     background-position: 100% 0 !important;
   }
 }
 @media screen and (min-width: 38.5em) {
-  /* line 255, ../scss/style.scss */
+  /* line 253, ../scss/style.scss */
   #workExperience #bancvue:after {
     background: rgba(0, 0, 0, 0) url("../images/spartan.svg") no-repeat 0 0%;
     background-size: 120%;
   }
 }
 @media screen and (min-width: 38.5em) {
-  /* line 282, ../scss/style.scss */
+  /* line 280, ../scss/style.scss */
   #workExperience #hostgator:after {
     background: rgba(0, 0, 0, 0) url("../images/snappy.png") no-repeat 0 0%;
     background-size: 100%;
+  }
+}
+@media screen and (min-width: 38.5em) {
+  /* line 346, ../scss/style.scss */
+  #workExperience #ocolly .main {
+    max-width: 54%;
   }
 }

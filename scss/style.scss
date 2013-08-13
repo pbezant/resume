@@ -11,11 +11,12 @@ Add images then parralax
     @media (min-width:38.5em) { @content; }
   }
   @else if $point == small {
-    @media (max-width: 650px)  { @content; }
+    @media (max-width: 19.5em)  { @content; }
   }
 }
 
 @import "compass";
+@import url("http://fonts.googleapis.com/css?family=Milonga");
 @media print{
 	@import "print";
 }
@@ -23,9 +24,6 @@ Add images then parralax
 $section-height:36.5rem;
 $blue : #ADD8E6;
 $white: #fff;
-
-@import url(http://fonts.googleapis.com/css?family=Milonga);
-
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 html { 
@@ -37,7 +35,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 body{
-	font:1.3rem Helvetica, Arial, sans-serif;
+	font:1.4rem Helvetica, Arial, sans-serif;
 	*font-size:small; /* hack retained to preserve specificity */
 	color: #444;
 	min-width:320px;
@@ -338,6 +336,17 @@ div.headerWrapper.main{
 	#ocolly{
 		background-color:$white;
 		font-family:"Courier New", Courier, monospace;
+		&:after{
+			background: rgba(0, 0, 0, 0) url("../images/o-state.svg") no-repeat 0 50%;
+			background-size:contain;
+			opacity: 0.9;
+			width:44%;
+		}
+		@include breakpoint(medium){
+			.main{
+				max-width:54%;
+			}
+		}
 		header{
 			.company{
 				@include background(image-url("logo-ocolly.png") no-repeat);
