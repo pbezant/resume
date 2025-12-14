@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Lora-class-c"
+		},
+		{
+			"path": "../LoRa-DMX"
+		},
+		{
+			"path": "../LoRa-DMX-Frontend"
+		}
+	],
+	"settings": {}
+}
