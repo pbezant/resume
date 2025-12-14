@@ -1,0 +1,281 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="LoRa DMX | Long-Range Wireless Lighting Control">
+    <Header />
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative py-20 overflow-hidden">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-10"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/95 to-slate-900"></div>
+            
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-sm mb-6">
+                        <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+                        </span>
+                        LoRaWAN Class C Implementation
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Controlling Stage Lighting <br>
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-indigo-400">From Miles Away</span>
+                    </h1>
+                    <p class="text-xl text-slate-300 mb-10 leading-relaxed">
+                        A full-stack IoT solution enabling real-time control of DMX512 lighting fixtures over LoRaWAN networks. 
+                        Bridging the gap between city-scale infrastructure and professional stage lighting protocols.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="tech-badge">C++ / PlatformIO</span>
+                        <span class="tech-badge">Vue.js 3</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">LoRaWAN Class C</span>
+                        <span class="tech-badge">The Things Network</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Challenge -->
+        <section class="py-16 bg-slate-900">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6 text-white">The Challenge</h2>
+                        <div class="space-y-6 text-slate-300">
+                            <p>
+                                <strong>The Range Limitation:</strong> Standard DMX512 is a wired protocol limited to ~1,200 meters under ideal conditions. Wireless DMX (2.4GHz) solutions exist but suffer from interference and short range (line-of-sight).
+                            </p>
+                            <p>
+                                <strong>The Infrastructure Problem:</strong> Lighting up a bridge, a distant tower, or a distributed festival ground usually requires running miles of expensive data cabling or setting up complex Wi-Fi bridges.
+                            </p>
+                            <p>
+                                <strong>The Latency Trade-off:</strong> LoRaWAN is designed for long-range, low-power sensor data (uplinks), not for controlling fast-paced lighting equipment (downlinks). Standard Class A devices only listen for 1 second after sending data, making them unusable for real-time control.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="glass-panel p-8 rounded-xl border border-slate-700/50">
+                        <h3 class="text-xl font-semibold mb-4 text-indigo-300">Project Goals</h3>
+                        <ul class="space-y-3 text-slate-300">
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-green-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Enable <strong>miles of range</strong> without local internet or cables.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-green-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Achieve <strong>near real-time latency</strong> for lighting cues.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-green-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Support <strong>complex patterns</strong> without saturating the low-bandwidth network.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-green-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Secure, multi-user web dashboard for remote management.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- System Architecture -->
+        <section class="py-16 bg-slate-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-10 text-center text-white">System Architecture</h2>
+                
+                <div class="glass-panel p-6 rounded-xl overflow-hidden mb-12">
+                    <div class="mermaid flex justify-center">
+                        graph LR
+                            subgraph "Frontend (Vue.js)"
+                                UI[Web Dashboard]
+                                Auth[Auth Service]
+                            end
+
+                            subgraph "Backend (Node.js)"
+                                API[Express API]
+                                Queue[Bull.js Queue]
+                                DB[(PostgreSQL)]
+                                MQTT[MQTT Bridge]
+                            end
+
+                            subgraph "LoRaWAN Network"
+                                TTN[The Things Network]
+                                GW[LoRaWAN Gateway]
+                            end
+
+                            subgraph "Edge Device (C++)"
+                                ESP[Heltec V3 (ESP32)]
+                                LoRa[SX1262 Radio]
+                                DMX[MAX485 Driver]
+                                Lights[DMX Fixtures]
+                            end
+
+                            UI -->|REST API| API
+                            API -->|Store State| DB
+                            API -->|Enqueue Command| Queue
+                            Queue -->|Process| MQTT
+                            MQTT -->|Downlink| TTN
+                            TTN -.->|Long Range RF| GW
+                            GW -.->|Long Range RF| LoRa
+                            LoRa -->|Interrupt| ESP
+                            ESP -->|RS-485| DMX
+                            DMX -->|DMX512 Signal| Lights
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="glass-panel p-6 rounded-xl">
+                        <div class="h-12 w-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4 text-blue-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Firmware & Hardware</h3>
+                        <p class="text-slate-400 text-sm">
+                            Built on the <strong>Heltec LoRa 32 V3</strong>. The firmware operates in <strong>Class C mode</strong>, keeping the receive window open continuously for immediate command execution. It features a custom DMX engine that handles local pattern generation (Rainbow, Strobe) to reduce network traffic.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="glass-panel p-6 rounded-xl">
+                        <div class="h-12 w-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4 text-purple-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Async Command Queue</h3>
+                        <p class="text-slate-400 text-sm">
+                            Since LoRaWAN is inherently asynchronous, the backend uses <strong>Bull.js</strong> to manage command queues. This decouples the user interface from the network latency, providing immediate UI feedback ("Pending" -> "Sent") while handling retries and network constraints in the background.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="glass-panel p-6 rounded-xl">
+                        <div class="h-12 w-12 bg-pink-500/20 rounded-lg flex items-center justify-center mb-4 text-pink-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Security & Access</h3>
+                        <p class="text-slate-400 text-sm">
+                            A robust <strong>Role-Based Access Control (RBAC)</strong> system allows device owners to share control with operators or viewers. Security is enforced via JWTs, and device communication is secured via LoRaWAN's AES-128 encryption (AppSKey/NwkSKey).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Deep Dive -->
+        <section class="py-16 bg-slate-900">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row gap-12">
+                    
+                    <!-- Left Column: Code/Tech -->
+                    <div class="md:w-1/2 space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-4">JSON Command Protocol</h3>
+                            <p class="text-slate-300 mb-4">
+                                To overcome LoRaWAN bandwidth limitations, the system uses a high-level JSON protocol. Instead of streaming raw DMX frames, the server sends compact commands that trigger complex, locally-generated effects on the edge device.
+                            </p>
+                            <p class="text-slate-300">
+                                This approach moves the "intelligence" to the edge, allowing for smooth animations like rainbows and strobes without saturating the network.
+                            </p>
+                        </div>
+
+                        <div class="glass-panel rounded-lg overflow-hidden border border-slate-700">
+                            <div class="bg-slate-800 px-4 py-2 border-b border-slate-700 flex justify-between items-center">
+                                <span class="text-xs text-slate-400 font-mono">Downlink Payload Examples</span>
+                                <div class="flex gap-1.5">
+                                    <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+                                </div>
+                            </div>
+                            <pre is:raw class="p-4 text-xs md:text-sm font-mono text-slate-300 overflow-x-auto"><code>// 1. Direct Control
+{
+  "lights": [
+    { "address": 1, "channels": [255, 0, 128, 0] }
+  ]
+}
+
+// 2. Rainbow Effect (Locally Generated)
+{
+  "test": {
+    "pattern": "rainbow",
+    "speed": 50,
+    "cycles": 3
+  }
+}</code></pre>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Class C Operation</h3>
+                            <p class="text-slate-300 text-sm">
+                                Standard LoRaWAN devices (Class A) sleep 99% of the time. We utilize <strong>Class C</strong>, which keeps the receive window open. This allows the server to push a command <em>at any time</em> with near-instant latency, essential for lighting cues.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: UI/UX -->
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold text-white mb-6">The Control Interface</h3>
+                        
+                        <!-- Placeholder for UI Screenshot -->
+                        <div class="glass-panel aspect-video rounded-xl border border-slate-700 flex items-center justify-center relative overflow-hidden group screenshot-container">
+                            <div class="absolute inset-0 bg-slate-800/50 flex flex-col items-center justify-center">
+                                <svg class="w-16 h-16 text-slate-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                <span class="text-slate-500 text-sm font-mono">Dashboard UI Placeholder</span>
+                                <span class="text-slate-600 text-xs mt-2">(Device List & Color Picker)</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 space-y-4">
+                            <div class="flex gap-4">
+                                <div class="w-8 h-8 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0 font-bold">1</div>
+                                <div>
+                                    <h4 class="text-white font-semibold">Device Registration</h4>
+                                    <p class="text-slate-400 text-sm">Users register devices using their DevEUI. The system validates ownership and sets up the MQTT bridge automatically.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-8 h-8 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0 font-bold">2</div>
+                                <div>
+                                    <h4 class="text-white font-semibold">Pattern Selection</h4>
+                                    <p class="text-slate-400 text-sm">Users select from presets (Static, Fade, Strobe) or create custom color sequences. The UI validates the payload size before sending.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-8 h-8 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0 font-bold">3</div>
+                                <div>
+                                    <h4 class="text-white font-semibold">Real-time Status</h4>
+                                    <p class="text-slate-400 text-sm">The dashboard listens for uplink acknowledgments to confirm the lights have actually changed, closing the feedback loop.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <Footer />
+</Layout>
+
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+</script>
+
+<style>
+    .tech-badge {
+        background: rgba(99, 102, 241, 0.1);
+        border: 1px solid rgba(99, 102, 241, 0.2);
+        color: #a5b4fc;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+</style>
