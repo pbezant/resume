@@ -1,0 +1,38 @@
+Prompt 1: System Architecture Diagram
+"Create a high-level system architecture diagram for an IoT tracking system called 'Sense Engine'.
+The diagram should show the following components:
+1.  **BLE Devices**: Various Bluetooth Low Energy devices (e.g., BXP Buttons, Eye Sensors, iTags) broadcasting signals.
+2.  **Gateways**: Hardware gateways (ESP32, MOKO, Cisco Meraki) receiving BLE signals.
+3.  **MQTT Broker**: A central message broker receiving data from gateways.
+4.  **Sense Engine Core**: The main processing unit.
+    *   **Decoder Layer**: Separate modules for each gateway type (ESP Decoder, MOKO Decoder, Meraki Decoder) to normalize incoming data.
+    *   **Profile Layer**: Device-specific parsers (BXP Profile, Eye Sensor Profile) that interpret the normalized data.
+    *   **Triangulation Engine**: Calculates device positions based on RSSI and gateway coordinates.
+5.  **Database**: MongoDB storing device states and history.
+6.  **Frontend**: A Vue.js web application (FMS) displaying real-time tracking and dashboards.
+Arrows should show data flowing from Devices -> Gateways -> MQTT -> Sense Engine (Decoders -> Profiles -> Triangulation) -> Database -> Frontend."
+
+Prompt 2: Data Flow Sequence Diagram
+"Create a sequence diagram illustrating the flow of a BLE advertisement from a device to the user interface.
+Participants: BLE Device, Gateway, MQTT Broker, Decoder Service, Profile Service, Database, Web UI.
+Steps:
+1.  BLE Device broadcasts an advertisement packet.
+2.  Gateway receives the packet and wraps it in a JSON payload (including RSSI and Gateway MAC).
+3.  Gateway publishes the payload to an MQTT topic.
+4.  Decoder Service subscribes to the topic, receives the message, and normalizes the format (extracting raw service data).
+5.  Profile Service identifies the device type and parses the service data (e.g., extracting button press status, battery level, temperature).
+6.  Profile Service saves the processed device state to the Database.
+7.  Web UI polls or receives a socket update from the Database/Backend and updates the device status on the screen."
+
+Prompt 3: Refactoring Before/After
+"Create a comparison diagram showing 'Before' and 'After' the architectural refactoring.
+**Before**:
+*   Gateway Decoders (ESP, MOKO) are monolithic.
+*   They contain logic for specific devices (e.g., 'If MAC starts with X, parse as BXP Button').
+*   Duplicated code across different gateway decoders.
+*   Hard to add new devices.
+**After**:
+*   **Gateway Decoders** only handle gateway-specific protocol unwrapping. They output a standard 'Observation' object.
+*   **Device Profiles** are standalone modules. They take an 'Observation' and parse the device data.
+*   Decoders and Profiles are decoupled.
+*   Easy to add new gateways or new devices independently."

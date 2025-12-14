@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sense Engine | IoT Architecture Case Study</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Slate 900 */
+            color: #f8fafc; /* Slate 50 */
+        }
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+        }
+        .screenshot-container {
+            transition: transform 0.3s ease;
+        }
+        .screenshot-container:hover {
+            transform: scale(1.02);
+        }
+    </style>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+    </script>
+</head>
+<body class="overflow-x-hidden selection:bg-cyan-500 selection:text-white">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 glass-panel shadow-lg border-b border-slate-700">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-indigo-400">
+                    SENSE ENGINE
+                </h1>
+                <p class="text-xs text-slate-400 uppercase tracking-widest mt-1">IoT Architecture Case Study</p>
+            </div>
+            <a href="../resume.html" class="text-sm text-slate-400 hover:text-white transition-colors">
+                &larr; Back to Resume
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-12 md:py-20 text-center">
+        <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Scalable <span class="text-cyan-400">Real-Time Tracking</span> <br>
+            & <span class="text-indigo-400">Device Management</span>
+        </h2>
+        <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+            A comprehensive architectural refactoring of a multi-protocol IoT platform. 
+            Decoupling gateway protocols from device logic to enable rapid scaling and sub-meter precision.
+        </p>
+        
+        <div class="flex flex-wrap justify-center gap-4">
+            <span class="px-4 py-2 bg-slate-800 rounded-full text-sm text-cyan-400 border border-slate-700">Node.js</span>
+            <span class="px-4 py-2 bg-slate-800 rounded-full text-sm text-indigo-400 border border-slate-700">MQTT</span>
+            <span class="px-4 py-2 bg-slate-800 rounded-full text-sm text-pink-400 border border-slate-700">Vue.js</span>
+            <span class="px-4 py-2 bg-slate-800 rounded-full text-sm text-emerald-400 border border-slate-700">MongoDB</span>
+            <span class="px-4 py-2 bg-slate-800 rounded-full text-sm text-purple-400 border border-slate-700">Docker</span>
+        </div>
+    </section>
+
+    <!-- The Challenge & Solution -->
+    <section class="bg-slate-900 py-16 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">The Challenge</h3>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        The original architecture suffered from tight coupling between Gateway Decoders and Device Profiles. 
+                        Adding a new gateway type (like Cisco Meraki) required duplicating device parsing logic. 
+                        Similarly, adding a new device type meant updating every gateway decoder.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold text-white mb-4">The Solution</h3>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        We implemented a clean separation of concerns:
+                    </p>
+                    <ul class="space-y-3 text-slate-300">
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span><strong>Decoder Layer:</strong> Normalizes gateway-specific payloads into a standard "Observation" format.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span><strong>Profile Layer:</strong> Pure functions that parse standard Observations into rich device state.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span><strong>Triangulation Engine:</strong> Agnostic to the source gateway, calculating position based on normalized RSSI data.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-2xl">
+                    <div class="text-xs font-mono text-slate-500 mb-2">System Architecture</div>
+                    <div class="mermaid">
+graph TD
+    %% Define Components
+    A[BLE Devices]
+    B[Gateways]
+    C[MQTT Broker]
+    D(Database: MongoDB)
+    E(Frontend: Vue.js FMS)
+    
+    subgraph Sense_Engine_Core
+        subgraph Decoder_Layer [Decoder Layer]
+            D1[ESP Decoder]
+            D2[MOKO Decoder]
+            D3[Meraki Decoder]
+        end
+        
+        subgraph Profile_Layer [Profile Layer]
+            P1[BXP Profile]
+            P2[Eye Sensor Profile]
+        end
+        
+        T[Triangulation Engine]
+        
+        %% Internal Flow
+        D1 --> P1
+        D2 --> P1
+        D3 --> P2
+        P1 --> T
+        P2 --> T
+    end
+    
+    %% External Flow (Data Path)
+    A --> B
+    B --> C
+    
+    %% MQTT input to all Decoders
+    C --> D1
+    C --> D2
+    C --> D3
+    
+    %% Storage & Output
+    T --> D
+    D --> E
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Gallery -->
+    <section class="py-16 bg-slate-950">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">System Interface</h2>
+            
+            <!-- Device Management -->
+            <div class="mb-20">
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="md:w-1/3">
+                        <h3 class="text-2xl font-bold text-white mb-3">Device Management</h3>
+                        <p class="text-slate-400">
+                            Real-time view of all active BLE devices. The interface provides instant feedback on signal strength (RSSI), 
+                            gateway connectivity, and device health. The grid view allows for quick visual scanning of the entire fleet.
+                        </p>
+                    </div>
+                    <div class="md:w-2/3 screenshot-container">
+                        <img src="devices_screenshot.png" alt="Device Management Interface" class="rounded-lg shadow-2xl border border-slate-700 w-full">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Live Tracking -->
+            <div class="mb-20">
+                <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+                    <div class="md:w-1/3">
+                        <h3 class="text-2xl font-bold text-white mb-3">Live Tracking Map</h3>
+                        <p class="text-slate-400">
+                            Visualizing device positions on a facility map. The system uses multi-lateration from gateway signal data 
+                            to pinpoint device locations in real-time.
+                        </p>
+                    </div>
+                    <div class="md:w-2/3 screenshot-container">
+                        <img src="live_tracking_screenshot.png" alt="Live Tracking Interface" class="rounded-lg shadow-2xl border border-slate-700 w-full">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gateway Infrastructure -->
+            <div class="mb-20">
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="md:w-1/3">
+                        <h3 class="text-2xl font-bold text-white mb-3">Gateway Infrastructure</h3>
+                        <p class="text-slate-400">
+                            Management of the physical gateway layer. Supports heterogeneous hardware including ESP32-based custom gateways 
+                            and enterprise Cisco Meraki access points.
+                        </p>
+                    </div>
+                    <div class="md:w-2/3 screenshot-container">
+                        <img src="gateways_screenshot.png" alt="Gateway Management Interface" class="rounded-lg shadow-2xl border border-slate-700 w-full">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Calibration -->
+            <div>
+                <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+                    <div class="md:w-1/3">
+                        <h3 class="text-2xl font-bold text-white mb-3">Visual Geo-Calibration</h3>
+                        <p class="text-slate-400">
+                            A sophisticated calibration tool that allows administrators to map indoor floor plans to real-world coordinates. 
+                            By selecting three control points on both the floor plan and the satellite map, the system calculates the 
+                            precise transformation matrix needed for sub-meter global positioning.
+                        </p>
+                    </div>
+                    <div class="md:w-2/3 screenshot-container">
+                        <img src="map_calibration_screenshot.png" alt="Map Calibration Interface" class="rounded-lg shadow-2xl border border-slate-700 w-full">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Technical Deep Dive -->
+    <section class="py-16 bg-slate-900 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Technical Deep Dive</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <div class="text-3xl mb-4">🔄</div>
+                    <h4 class="text-xl font-bold text-white mb-2">MQTT Message Bus</h4>
+                    <p class="text-slate-400 text-sm">
+                        High-throughput messaging backbone handling thousands of BLE advertisements per second. 
+                        Ensures decoupling between hardware ingestion and software processing.
+                    </p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <div class="text-3xl mb-4">🧩</div>
+                    <h4 class="text-xl font-bold text-white mb-2">Polymorphic Decoding</h4>
+                    <p class="text-slate-400 text-sm">
+                        Decoupled architecture separating gateway protocols from device profiles. Enables "write once, run anywhere" 
+                        device support across Cisco, Aruba, and ESP32 infrastructure.
+                    </p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <div class="text-3xl mb-4">📍</div>
+                    <h4 class="text-xl font-bold text-white mb-2">Triangulation Logic</h4>
+                    <p class="text-slate-400 text-sm">
+                        Custom algorithms processing RSSI vectors from multiple gateways to estimate X/Y coordinates 
+                        on the facility floor plan.
+                    </p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <div class="text-3xl mb-4">🗺️</div>
+                    <h4 class="text-xl font-bold text-white mb-2">Visual Geo-Calibration</h4>
+                    <p class="text-slate-400 text-sm">
+                        Drag-and-drop interface for overlaying floor plans onto Google Maps. 
+                        Automatically translates pixel coordinates to global latitude/longitude for seamless indoor-outdoor tracking.
+                    </p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <div class="text-3xl mb-4">🩺</div>
+                    <h4 class="text-xl font-bold text-white mb-2">System Health & Diagnostics</h4>
+                    <p class="text-slate-400 text-sm">
+                        Automated self-healing pipelines that monitor memory leaks, gateway coverage, and data integrity in real-time, 
+                        ensuring 99.9% system reliability.
+                    </p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <div class="text-3xl mb-4">📡</div>
+                    <h4 class="text-xl font-bold text-white mb-2">Hybrid Positioning (AoA)</h4>
+                    <p class="text-slate-400 text-sm">
+                        Multi-modal tracking engine combining RSSI trilateration for general assets with Angle-of-Arrival (AoA) 
+                        solving for sub-meter precision requirements.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 shadow-2xl mt-12">
+                <h3 class="text-2xl font-bold text-white mb-6 text-center">Data Flow Sequence</h3>
+                <p class="text-slate-400 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
+                    The system follows a strict event-driven pipeline. From the moment a BLE device broadcasts a packet, 
+                    it traverses through the physical gateway layer, onto the MQTT message bus, and into the core processing engine. 
+                    This sequence diagram illustrates the lifecycle of a single advertisement packet as it is normalized, parsed, 
+                    and finally pushed to the user interface in real-time.
+                </p>
+                <div class="mermaid flex justify-center">
+sequenceDiagram
+    autonumber
+    participant BLE as BLE Device
+    participant GW as Gateway
+    participant MQTT as MQTT Broker
+    participant DEC as Decoder Service
+    participant PROF as Profile Service
+    participant DB as Database
+    participant UI as Web UI
+
+    note over BLE, GW: Physical RF Layer
+    BLE->>GW: Broadcasts Advertisement Packet
+    
+    activate GW
+    note right of GW: Step 2: Wrap packet in JSON<br/>(add RSSI & Gateway MAC)
+    GW->>MQTT: Publish payload to MQTT topic
+    deactivate GW
+    
+    activate MQTT
+    MQTT->>DEC: Deliver message (Subscribed topic)
+    deactivate MQTT
+    
+    activate DEC
+    note right of DEC: Step 4: Normalize format<br/>(extract raw service data)
+    DEC->>PROF: Pass normalized raw data
+    deactivate DEC
+    
+    activate PROF
+    note right of PROF: Step 5: Identify device type<br/>& parse service data<br/>(e.g., temp, battery)
+    PROF->>DB: Save processed device state
+    deactivate PROF
+    
+    activate DB
+    note right of DB: Data persisted
+    deactivate DB
+
+    par Web UI Update (Asynchronous)
+        note over DB, UI: Step 7: Polling or WebSocket push
+        DB-->>UI: Receive update data (Socket/Poll response)
+        activate UI
+        UI->>UI: Update device status on screen
+        deactivate UI
+    end
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI & Future Roadmap -->
+    <section class="py-16 bg-slate-950 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Future-Ready Intelligence</h2>
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-white mb-4">AI-Enhanced Positioning</h3>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        Moving beyond simple triangulation, the Sense Engine employs machine learning models to continuously refine positioning accuracy. 
+                        By utilizing static devices as ground-truth anchors, the system dynamically adjusts signal propagation models in real-time.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-3">✓</span>
+                            <p class="text-slate-300 text-sm"><strong class="text-white">40-70% Accuracy Boost:</strong> Validated improvements over traditional RSSI methods.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-3">✓</span>
+                            <p class="text-slate-300 text-sm"><strong class="text-white">Auto-Calibration:</strong> Uses stationary devices as ground-truth anchors to continuously retrain the model.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-3">✓</span>
+                            <p class="text-slate-300 text-sm"><strong class="text-white">Dynamic Adaptation:</strong> Automatically adjusts to environmental changes affecting signal quality.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 bg-slate-900 p-8 rounded-2xl border border-slate-800">
+                    <!-- Placeholder for a conceptual graphic or code snippet -->
+                    <div class="font-mono text-xs text-blue-300 bg-slate-950 p-4 rounded-lg border border-slate-800 overflow-hidden">
+                        <div class="mb-2 text-slate-500">// ML_IMPLEMENTATION_GUIDE.md</div>
+                        <div class="pl-4 border-l-2 border-slate-800">
+                            <span class="text-purple-400">class</span> <span class="text-yellow-300">SignalPropagator</span> {<br>
+                            &nbsp;&nbsp;<span class="text-purple-400">async</span> <span class="text-blue-400">calibrate</span>(staticDevices) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-slate-400">// Use static anchors as ground truth</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-purple-400">const</span> anchors = <span class="text-purple-400">await</span> <span class="text-orange-300">this</span>.<span class="text-blue-400">getStaticAnchors</span>();<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-slate-400">// Retrain model on actual vs expected RSSI</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-purple-400">return</span> <span class="text-blue-400">trainModel</span>(anchors, <span class="text-orange-300">this</span>.readings);<br>
+                            &nbsp;&nbsp;}<br>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 py-8 border-t border-slate-800 text-center">
+        <p class="text-slate-500 text-sm">&copy; 2025 StructureSense. Case Study Generated for Portfolio.</p>
+    </footer>
+
+</body>
+</html>
