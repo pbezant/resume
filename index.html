@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Bezant | IoT Systems Architect Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Importing a Google Font for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Embedded CSS for specific Chart Container constraints -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Slate 900 */
+            color: #f8fafc; /* Slate 50 */
+        }
+        
+        .chart-container {
+            position: relative;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+
+        /* Responsive max-widths for charts */
+        @media (min-width: 768px) {
+            .chart-container {
+                max-width: 650px;
+                height: 400px;
+            }
+        }
+
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7); /* Slate 800 with opacity */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+        }
+    </style>
+    <!-- Palette: "Neon Night" - Deep Slate Background with Electric Cyan, Purple, and Emerald Accents -->
+    <!-- Hex Codes Used: #0f172a (Bg), #1e293b (Card), #38bdf8 (Cyan), #818cf8 (Indigo), #34d399 (Emerald), #f472b6 (Pink) -->
+</head>
+<body class="overflow-x-hidden selection:bg-cyan-500 selection:text-white">
+
+    <!-- Navigation / Header -->
+    <header class="sticky top-0 z-50 glass-panel shadow-lg border-b border-slate-700">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-indigo-400">
+                    PRESTON BEZANT
+                </h1>
+                <p class="text-xs text-slate-400 uppercase tracking-widest mt-1">IoT Systems Architect</p>
+            </div>
+            <a href="mailto:preston@prestonbezant.me" class="hidden md:inline-block bg-cyan-600 hover:bg-cyan-500 text-white px-4 py-2 rounded-full text-sm font-semibold transition-colors duration-300">
+                Contact Me
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-12 md:py-20 text-center">
+        <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Bridging <span class="text-cyan-400">Physical Hardware</span> <br>
+            with <span class="text-indigo-400">Digital Intelligence</span>
+        </h2>
+        <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+            Highly entrepreneurial IoT Systems Architect with 7+ years of experience transforming product designs into scalable hardware solutions. Specializing in LoRaWAN, Embedded C++, and Generative AI integration.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div class="p-6 bg-slate-800 rounded-xl shadow-lg border border-slate-700 hover:border-cyan-500 transition-all duration-300 transform hover:-translate-y-1">
+                <div class="text-4xl mb-3">📡</div>
+                <h3 class="text-xl font-bold text-white mb-2">LPWAN Expert</h3>
+                <p class="text-slate-400 text-sm">LoRaWAN Class C, Helium, & TTN Networks</p>
+            </div>
+            <div class="p-6 bg-slate-800 rounded-xl shadow-lg border border-slate-700 hover:border-indigo-500 transition-all duration-300 transform hover:-translate-y-1">
+                <div class="text-4xl mb-3">💾</div>
+                <h3 class="text-xl font-bold text-white mb-2">Embedded Systems</h3>
+                <p class="text-slate-400 text-sm">C++, ESP32, PlatformIO & Firmware</p>
+            </div>
+            <div class="p-6 bg-slate-800 rounded-xl shadow-lg border border-slate-700 hover:border-pink-500 transition-all duration-300 transform hover:-translate-y-1">
+                <div class="text-4xl mb-3">⚡</div>
+                <h3 class="text-xl font-bold text-white mb-2">Gen-AI Integration</h3>
+                <p class="text-slate-400 text-sm">Automating Workflows with Claude & Cursor</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Career Timeline -->
+    <section class="bg-slate-900 py-16 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="mb-12 text-center md:text-left">
+                <h2 class="text-3xl font-bold text-white mb-4">Professional Evolution</h2>
+                <p class="text-slate-400 max-w-2xl">
+                    A visual history of my career trajectory, showcasing the pivot from High-End Product/UX Design at major enterprises (Lowe's, Visa) to founding and architecting complex IoT hardware systems at StructureSense.
+                </p>
+            </div>
+            
+            <div class="bg-slate-800 rounded-2xl p-6 md:p-10 shadow-xl border border-slate-700">
+                <div class="chart-container">
+                    <canvas id="careerTimelineChart"></canvas>
+                </div>
+                <div class="mt-6 text-center text-sm text-slate-500">
+                    <span>From UI/UX Design Leadership &xrarr; Full-Stack IoT Architecture</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Technical Competency Radar -->
+    <section class="py-16 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-6">Technical Competency Ecosystem</h2>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        My skillset represents a unique hybrid of hardware engineering, software development, and product strategy. Unlike traditional specialists, I bridge the gap between "making it work" (Engineering) and "making it sell" (Product).
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-3 mt-1">&#10004;</span>
+                            <div>
+                                <strong class="text-white block">Hardware & Connectivity</strong>
+                                <span class="text-slate-400 text-sm">ESP32, LoRaWAN Class C, BLE, Sensors (Occupancy/Temp/Pressure)</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-indigo-400 mr-3 mt-1">&#10004;</span>
+                            <div>
+                                <strong class="text-white block">Cloud & Software</strong>
+                                <span class="text-slate-400 text-sm">Datacake, DigitalOcean, Ubuntu, Full-Stack Development</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-pink-400 mr-3 mt-1">&#10004;</span>
+                            <div>
+                                <strong class="text-white block">AI & Optimization</strong>
+                                <span class="text-slate-400 text-sm">Leveraging LLMs for 40% faster integration & auto-documentation</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Radar Chart -->
+                <div class="bg-slate-800 rounded-2xl p-4 md:p-8 shadow-xl border border-slate-700 flex justify-center items-center">
+                    <div class="chart-container" style="max-height: 450px;">
+                        <canvas id="skillsRadarChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: StructureSense Case Study (Key Metrics) -->
+    <section class="py-16 bg-gradient-to-br from-slate-900 to-slate-800 border-y border-slate-700">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-cyan-400 font-bold tracking-wider uppercase text-sm">Case Study</span>
+                <h2 class="text-4xl font-bold text-white mt-2 mb-4">StructureSense Impact Analysis</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto">
+                    Founded in Jan 2025, StructureSense represents the culmination of my full-stack capabilities. Here are the quantified results of the Smart Warehouse Proof-of-Concept.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Metric Card 1 -->
+                <div class="bg-slate-800 p-6 rounded-xl border-t-4 border-cyan-500 shadow-lg text-center">
+                    <div class="text-5xl font-bold text-white mb-2">50k</div>
+                    <div class="text-cyan-400 text-sm font-bold uppercase tracking-wide">Sq. Ft. Coverage</div>
+                    <p class="text-slate-400 text-xs mt-3">Smart Warehouse PoC Facility</p>
+                </div>
+                <!-- Metric Card 2 -->
+                <div class="bg-slate-800 p-6 rounded-xl border-t-4 border-indigo-500 shadow-lg text-center">
+                    <div class="text-5xl font-bold text-white mb-2">500+</div>
+                    <div class="text-indigo-400 text-sm font-bold uppercase tracking-wide">Active Devices</div>
+                    <p class="text-slate-400 text-xs mt-3">RTLS Platform Management</p>
+                </div>
+                <!-- Metric Card 3 -->
+                <div class="bg-slate-800 p-6 rounded-xl border-t-4 border-pink-500 shadow-lg text-center">
+                    <div class="text-5xl font-bold text-white mb-2">40%</div>
+                    <div class="text-pink-400 text-sm font-bold uppercase tracking-wide">Faster Integration</div>
+                    <p class="text-slate-400 text-xs mt-3">Via Generative AI Workflows</p>
+                </div>
+                <!-- Metric Card 4 -->
+                <div class="bg-slate-800 p-6 rounded-xl border-t-4 border-emerald-500 shadow-lg text-center">
+                    <div class="text-5xl font-bold text-white mb-2">&lt;1m</div>
+                    <div class="text-emerald-400 text-sm font-bold uppercase tracking-wide">Precision</div>
+                    <p class="text-slate-400 text-xs mt-3">Sub-meter Triangulation</p>
+                </div>
+            </div>
+
+            <!-- Detailed Charts Row -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Chart: Performance Impact -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <h3 class="text-xl font-bold text-white mb-4">Engineering Efficiency Gains</h3>
+                    <p class="text-sm text-slate-400 mb-6">Comparing traditional development timelines vs. AI-augmented workflows implemented at StructureSense.</p>
+                    <div class="chart-container">
+                        <canvas id="efficiencyChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Chart: System Latency -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <h3 class="text-xl font-bold text-white mb-4">System Latency vs. Load</h3>
+                    <p class="text-sm text-slate-400 mb-6">Performance metrics of the proprietary Class C LoRaWAN library controlling a DMX universe (512 channels).</p>
+                    <div class="chart-container">
+                        <canvas id="latencyChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Education & Contact -->
+    <section class="py-16 bg-slate-900">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">Education</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+                <div class="p-6 border border-slate-700 rounded-xl hover:bg-slate-800 transition-colors">
+                    <h3 class="text-lg font-bold text-white">Oklahoma State University</h3>
+                    <p class="text-cyan-400">B.B.A. Management Information Systems</p>
+                    <p class="text-slate-500 text-sm mt-2">2006 - 2011</p>
+                </div>
+                <div class="p-6 border border-slate-700 rounded-xl hover:bg-slate-800 transition-colors">
+                    <h3 class="text-lg font-bold text-white">Austin Community College</h3>
+                    <p class="text-cyan-400">Design & Visual Communications</p>
+                    <p class="text-slate-500 text-sm mt-2">2014 - 2016</p>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-cyan-900 to-indigo-900 p-8 rounded-2xl shadow-2xl">
+                <h2 class="text-2xl font-bold text-white mb-4">Ready to Scale Your IoT Infrastructure?</h2>
+                <p class="text-slate-200 mb-6">Currently seeking opportunities to apply deep technical knowledge and product management acumen.</p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                    <a href="mailto:preston@prestonbezant.me" class="bg-white text-indigo-900 font-bold py-3 px-8 rounded-full hover:bg-slate-100 transition-colors">
+                        preston@prestonbezant.me
+                    </a>
+                    <a href="https://linkedin.com/in/prestonbezant" target="_blank" class="border border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-indigo-900 transition-colors">
+                        LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 py-8 border-t border-slate-800 text-center">
+        <p class="text-slate-500 text-sm">&copy; 2025 Preston Bezant. Generated Resume Infographic.</p>
+    </footer>
+
+    <!-- JavaScript Implementation -->
+    <script>
+        // --- Helper Functions ---
+
+        // 1. Label Wrapping Helper
+        // Splits long strings into arrays of strings for Chart.js multiline support
+        function wrapLabel(str, maxLen = 16) {
+            if (str.length <= maxLen) return str;
+            const words = str.split(' ');
+            const lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if ((currentLine + " " + words[i]).length <= maxLen) {
+                    currentLine += " " + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        // 2. Standard Tooltip Configuration
+        // Ensures arrays (multiline labels) are joined back into readable strings in tooltips
+        const commonTooltipConfig = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    } else {
+                        return label;
+                    }
+                }
+            }
+        };
+
+        // --- Chart 1: Professional Timeline (Gantt style using Bar Chart) ---
+        // Showing tenure at different companies.
+        const ctxTimeline = document.getElementById('careerTimelineChart').getContext('2d');
+        
+        // Data prep: Convert dates to simple numeric approximations for the chart axis
+        // Jan = .0, Dec = .9 approx
+        new Chart(ctxTimeline, {
+            type: 'bar',
+            data: {
+                labels: ['TripChamp', 'Konverge', 'Harland Clarke', 'Visa', 'Verbosity', "Lowe's", 'StructureSense'],
+                datasets: [{
+                    label: 'Tenure Years',
+                    data: [
+                        [2016.3, 2017.4], // TripChamp
+                        [2017.6, 2017.9], // Konverge
+                        [2017.9, 2019.9], // Harland Clarke
+                        [2020.2, 2021.6], // Visa
+                        [2021.7, 2022.1], // Verbosity
+                        [2022.2, 2024.8], // Lowe's
+                        [2025.0, 2025.9]  // StructureSense (Present)
+                    ],
+                    backgroundColor: [
+                        'rgba(56, 189, 248, 0.5)', // Cyan
+                        'rgba(56, 189, 248, 0.5)',
+                        'rgba(56, 189, 248, 0.6)',
+                        'rgba(129, 140, 248, 0.6)', // Indigo
+                        'rgba(129, 140, 248, 0.7)',
+                        'rgba(129, 140, 248, 0.8)',
+                        'rgba(244, 114, 182, 0.9)'  // Pink (Current/Founder)
+                    ],
+                    borderColor: [
+                        '#38bdf8', '#38bdf8', '#38bdf8', 
+                        '#818cf8', '#818cf8', '#818cf8', 
+                        '#f472b6'
+                    ],
+                    borderWidth: 1,
+                    barPercentage: 0.6
+                }]
+            },
+            options: {
+                indexAxis: 'y', // Horizontal bars
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        min: 2016,
+                        max: 2026,
+                        grid: { color: 'rgba(148, 163, 184, 0.1)' },
+                        ticks: { color: '#94a3b8' }
+                    },
+                    y: {
+                        grid: { display: false },
+                        ticks: { color: '#f8fafc', font: { weight: 'bold' } }
+                    }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                // Custom label to show Year range instead of raw floats
+                                const raw = context.raw;
+                                return `Years: ${Math.floor(raw[0])} - ${Math.ceil(raw[1])}`;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // --- Chart 2: Skills Radar Chart ---
+        // Comparing competence areas based on the "Skills" section of the resume.
+        const ctxRadar = document.getElementById('skillsRadarChart').getContext('2d');
+        
+        // Categories from Resume
+        const skillCategories = [
+            "IoT & Wireless Protocols",
+            "Embedded C++ & Firmware",
+            "Full-Stack & Cloud",
+            "Product Management",
+            "UX/UI Design", // Historical strength
+            "Gen-AI Integration"
+        ];
+
+        // Process labels for wrapping
+        const wrappedRadarLabels = skillCategories.map(l => wrapLabel(l, 14));
+
+        new Chart(ctxRadar, {
+            type: 'radar',
+            data: {
+                labels: wrappedRadarLabels,
+                datasets: [{
+                    label: 'Skill Proficiency',
+                    data: [95, 90, 85, 80, 85, 90], // Estimated based on job emphasis
+                    backgroundColor: 'rgba(56, 189, 248, 0.2)', // Cyan transparent
+                    borderColor: '#38bdf8',
+                    pointBackgroundColor: '#fff',
+                    pointBorderColor: '#38bdf8',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#38bdf8'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: { color: 'rgba(148, 163, 184, 0.2)' },
+                        grid: { color: 'rgba(148, 163, 184, 0.2)' },
+                        pointLabels: {
+                            color: '#e2e8f0',
+                            font: { size: 12, weight: 'bold' }
+                        },
+                        ticks: { display: false, backdropColor: 'transparent' },
+                        min: 0,
+                        max: 100
+                    }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: commonTooltipConfig
+                }
+            }
+        });
+
+        // --- Chart 3: Efficiency Gains (StructureSense) ---
+        // Visualizing the "40% acceleration" metric using a Comparative Bar Chart
+        const ctxEfficiency = document.getElementById('efficiencyChart').getContext('2d');
+
+        new Chart(ctxEfficiency, {
+            type: 'bar',
+            data: {
+                labels: wrapLabel('Traditional Integration vs AI-Augmented Workflow'),
+                datasets: [
+                    {
+                        label: 'Standard Time',
+                        data: [100],
+                        backgroundColor: 'rgba(148, 163, 184, 0.3)',
+                        borderColor: '#94a3b8',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'AI-Augmented Time',
+                        data: [60], // 100 - 40% = 60
+                        backgroundColor: 'rgba(244, 114, 182, 0.6)', // Pink
+                        borderColor: '#f472b6',
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 120,
+                        grid: { display: false },
+                        ticks: { display: false }
+                    },
+                    x: {
+                        grid: { display: false },
+                        ticks: { display: false } // Hide label as legend covers it
+                    }
+                },
+                plugins: {
+                    tooltip: commonTooltipConfig,
+                    legend: {
+                        position: 'bottom',
+                        labels: { color: '#cbd5e1' }
+                    },
+                    annotation: {
+                        // Note: Annotation plugin not loaded, using title instead
+                    }
+                }
+            }
+        });
+
+        // --- Chart 4: Latency vs Devices (StructureSense) ---
+        // Visualizing scale and performance
+        const ctxLatency = document.getElementById('latencyChart').getContext('2d');
+
+        new Chart(ctxLatency, {
+            type: 'line',
+            data: {
+                labels: ['100 Devices', '200 Devices', '300 Devices', '400 Devices', '500+ Devices'],
+                datasets: [{
+                    label: 'Latency (Seconds)',
+                    data: [15, 20, 25, 35, 50], // Simulated curve based on "Sub-minute" for 500 devices
+                    borderColor: '#34d399', // Emerald
+                    backgroundColor: 'rgba(52, 211, 153, 0.2)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: 'rgba(148, 163, 184, 0.1)' },
+                        ticks: { color: '#94a3b8' },
+                        title: { display: true, text: 'Latency (sec)', color: '#64748b' }
+                    },
+                    x: {
+                        grid: { display: false },
+                        ticks: { color: '#94a3b8' }
+                    }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: commonTooltipConfig
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
